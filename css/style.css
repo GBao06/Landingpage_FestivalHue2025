@@ -3,19 +3,27 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .wrapper{
-    margin: 0 auto;
+    margin: 0px auto;
     padding: 0;
-    border: 1px solid #333;
-    width: 1200px;
-}
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+} 
 .header{
-  border: 1px solid #333;
-  height: 50px;
+  height: 70px;
   display: flex;
   justify-content:space-between;
-  gap: 25px;
-  padding: 0;
+  padding:0 10px;
   margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.header h2{
+  color: red;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 5px 0;
+  font-weight: bold;
 }
 .logo{
   /* width:100%;
@@ -27,6 +35,9 @@ body {
   width: 100%;
   height: 100%;
 }
+.list_menu{
+  padding: 10px;
+}
 .list_menu ul{
   list-style: none;
   display: flex;
@@ -34,7 +45,7 @@ body {
 }
 .list_menu li{
   margin: auto 0;
-  padding: 0 30px;
+  padding: 5px 10px;
   text-transform: uppercase;
   font-weight: bold; 
  
@@ -44,7 +55,8 @@ a {
   display: inline-block; 
   text-decoration: none;
   font-size: 18px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-out;
+  color: black;
 }
 
 a:hover {
@@ -52,10 +64,22 @@ a:hover {
   opacity: 0.5;
 }
 
+
+
 .banner video {
   width: 100%;
   height: auto;
   border-radius: 10px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
-
+.banner img{
+  width: 100%;
+  height: 100%;
+}
+.banner h2{
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: black;
+}
+  
