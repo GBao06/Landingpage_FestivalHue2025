@@ -1,0 +1,111 @@
+.slider {
+    width: 80%;
+    margin: 30px auto;
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+  }
+
+  .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    background-color: #087f5b;
+  }
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide-item {
+    min-width: 100%;
+    padding: 32px 48px 32px 86px;
+    display: flex;
+    gap: 86px;
+    align-items: center;
+    color: white;
+  }
+
+  .slide-item img {
+    height: 200px;
+    border-radius: 8px;
+    transform: scale(1.5) translateX(-20px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  }
+
+  .testimonial-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    color: #e6fcf5;
+  }
+
+  .testimonial-author {
+    font-size: 14px;
+    color: #c3fae8;
+    font-weight: bold;
+  }
+
+  .testimonial-job {
+    font-size: 12px;
+    color: #c3fae8;
+  }
+
+  .btn {
+    background-color: #fff;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #087f5b;
+    font-size: 24px;
+    z-index: 1;
+  }
+
+  .btn--left {
+    left: 10px;
+  }
+
+  .btn--right {
+    right: 10px;
+  }
+
+  .dots {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+  }
+
+  .dot {
+    margin-top: 50px;
+    height: 12px;
+    width: 12px;
+    background-color: #fff;
+    border: 2px solid #087f5b;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .dot.active {
+    background-color: #0dad7d;
+  }

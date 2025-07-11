@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./src/skdslider.css">
+    <link rel="stylesheet" href="./css/slider.css">
     <script src="./src/skdslider.js"></script>
     <script src="./src/skdslider.min.js"></script>
     <script type="text/javascript">
@@ -67,46 +68,49 @@
             <img src="./assets/images/banner1.jpg" alt="">
              
         </section>
-        <!-- slide show -->
-        <div id="demo1" style="height: 500px !important;">
-            <div class="slide">
-              <img src="./assets/images/Picture1.png" />
+         <!-- slide show -->
+        <section class="slider">
+            <div class="carousel">
+                <div class="carousel-inner">
+                  <div class="slide-item">
+                    <img src="./assets/images/KhamPha_DoiVongCanh.png" alt="Maria de Almeida" />
+                    <div class="testimonial">
+                      <p class="testimonial-text">"Maria là người rất tận tâm và chuyên nghiệp trong công việc."</p>
+                      <p class="testimonial-author">Maria de Almeida</p>
+                      <p class="testimonial-job">Senior Product Manager</p>
+                    </div>
+                  </div>
             
-               <!-- <div class="slide-desc">
-                  <h2>Slider Title 1</h2>
-                  <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
-              </div> -->
-           </div>
-          <div class="slide">
-             <img src="./assets/images/Picture2.png" />
-             <!-- <div class="slide-desc">
-              <h2>Slider Title 2</h2>
-              <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
-            </div> -->
-         </div>
-         <div class="slide">
-            <img src="./assets/images/Picture3.png" />
-           
-         </div>
-         <div class="slide">
-           <img src="./assets/images/Picture4.png" />
-           <!-- <div class="slide-desc">
-            <h2>Slider Title 4</h2>
-            <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
-           </div> -->
-        </div>
-       <div class="slide">
-          <img src="./assets/images/Picture5.png" />
-       </div>
-       <div class="slide">
-         <img src="./assets/images/Picture6.png" />
-          <!-- <div class="slide-desc">
-          <h2>Slider Title 6</h2>
-          <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
-         </div> -->
-       </div>
-      </div>
-        <script src="./js/slider.js"></script>
+                  <div class="slide-item">
+                    <img src="./assets/images/KhamPha_LangTuDuc.png" alt="John Smith" />
+                    <div class="testimonial">
+                      <p class="testimonial-text">"John giúp công ty tăng trưởng vượt trội chỉ sau 3 tháng."</p>
+                      <p class="testimonial-author">John Smith</p>
+                      <p class="testimonial-job">CEO tại ABC Corp</p>
+                    </div>
+                  </div>
+            
+                  <div class="slide-item">
+                    <img src="./assets/images/KhamPha_TrungLonUmBau.png" alt="Sara Lee" />
+                    <div class="testimonial">
+                      <p class="testimonial-text">"Sara luôn hỗ trợ khách hàng rất nhanh chóng và chuyên nghiệp."</p>
+                      <p class="testimonial-author">Sara Lee</p>
+                      <p class="testimonial-job">Marketing Lead</p>
+                    </div>
+                  </div>
+                </div>
+            
+                <button class="btn btn--left">&#10094;</button>
+                <button class="btn btn--right">&#10095;</button>
+            
+                <div class="dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+              </div>
+              <script src="./js/slider.js"></script>
+        </section> -->
     </div>
 
     
