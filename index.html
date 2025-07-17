@@ -1,184 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"rel="stylesheet"/>
+  </head>
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"rel="stylesheet"/>
-    <!-- Font Awesome 6 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <body>
+    <div id="tsparticles"></div>
+    <section>
+      <div class="content">
+        <h1>Festival Huế!</h1>
+        <p>
+          Festival Huế - nơi hội tụ tinh hoa văn hóa dân tộc và giao lưu quốc
+          tế…
+        </p>
+        <a href="#" class="btn">Khám phá ngay &darr;</a>
+      </div>
 
-    <!-- MDBootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"rel="stylesheet"/>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="f1.jpg" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/slider.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/sukien.css">
-    <script src="./src/skdslider.js"></script>
-    <script src="./src/skdslider.min.js"></script>
-    
-</head>
-<body>
-    <!-- landingpage -->
-    <div class="wrapper">
-        <header class="header">
-            <div class="logo">
-                <img src="./assets/images/logo-festival.png" alt="">
+            <div class="overlay">
+              <h1>Festival Huế – Hành trình của cảm xúc</h1>
+              <p>
+                Giữa lòng Cố đô cổ kính, Festival Huế là bản hòa âm rực rỡ của
+                quá khứ và hiện đại. Nơi đây, mỗi sắc màu văn hóa đều được tôn
+                vinh – mỗi khoảnh khắc là một ký ức sống động.
+              </p>
             </div>
-            <h2>Festival Hue</h2>
-            <div class="list_menu" id="list_menu">
-                <ul>
-                    <li><a href="./index.html">Trang chủ</a></li>
-                    <li><a href="./index.html">Giới thiệu</a></li>
-                    <li><a href="./index.html">Làng nghề</a></li>
-                    <li><a href="./index.html">Ẩm thực</a></li>
-                    <li><a href="./index.html">Nghệ thuật</a></li>
-                    <li><a href="./index.html">Liên hệ</a></li>
-                </ul>
-            </div>
-            <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- Biểu tượng 3 gạch -->
-            <script>
-                const toggle = document.getElementById('menu-toggle');
-                const menu = document.getElementById('list_menu');
-              
-                toggle.addEventListener('click', () => {
-                  menu.classList.toggle('active');
-                });
-              </script>
-              
-        </header>
-
-
-        <section class="banner">
-            <!-- <video src="./src/gioithieu.mp4" autoplay muted loop></video> -->
-            <!-- <H2>Tinh hoa di sản cố đô</H2>  -->
-            <img src="./assets/images/banner1.jpg" alt="">
-
-
-        </section>
-        
-
-        <section class="lichtrinh container">
-            <h2>🎉 Festival Huế 2025</h2>
-            <p>21 – 26 tháng 6 năm 2025 | Thành phố Huế</p>
-            <div class="container-sukien">
-              <div class="overlay"></div>
-                <div class="container-list">
-                  <div class="container-list-item">
-                      <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                      <div class="container-list-item-text">
-                        <h3> Khai mạc</h3>
-                        <p><i class="fa-solid fa-location-dot"></i>&nbsp;Quảng trường Ngọ Môn</p>
-                        <p><i class="fa-regular fa-calendar"></i>&nbsp;21/6/2025 – Tối</p>
-                      </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Đêm Hoàng Cung</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Đại Nội – Cung Trường Sanh</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp;22–23/6/2025 – Tối</p>
-                    </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Carnaval Đường Phố</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Đường Lê Lợi – Hùng Vương</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp;23–24/6/2025 – Chiều</p>
-                    </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Lễ hội Áo dài</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Bia Quốc Học</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp;24/6/2025</p>
-                    </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Lễ hội Nghề Truyền thống</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Công viên Tứ Tượng</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp;21–26/6/2025</p>
-                    </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Bế mạc</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Ngọ Môn – Đại Nội</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp26/6/2025 – Tối</p>
-                    </div>
-                  </div>
-                  <!-- <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Tết Trung thu: Lễ hội đèn lồng 2024l</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Đại Nội Huế</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp;00:00 | 13/09/2024 - 17/09/2024</p>
-                    </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Huế Tường - vở kịch sân khấu truyền thống, Cảm hứng quá khứ</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Thành phố Huế</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp;14/09/2024</p>
-                    </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Tết Trung thu: Biểu diễn đường phố nhảy kỳ lân</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Thành phố Huế</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp;20:00 | 24/09/2024</p>
-                    </div>
-                  </div> -->
-                </div>
-            </div>
-        </section>
-
-
-
-        <footer class="text-center bg-body-tertiary footer">
-          <div class="container pt-4">
-            <section class="mb-4">
-              <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button">
-                <i class="fab fa-google"></i>
-              </a>
-              <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button">
-                <i class="fab fa-github"></i>
-              </a>
-            </section>
           </div>
-          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2025 Bản quyền: <a class="text-body" href="#">HaiCauFixBugCode🤡</a>
-          </div>
-        </footer>
+          <div class="swiper-slide">
+            <img src="f2.jpg" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
-</body>
+            <div class="overlay">
+              <h1>Festival Việt – Pháp 1992 đến lễ hội mang tầm quốc gia</h1>
+              <p>
+                Festival Huế ra đời từ một sự kiện hợp tác văn hóa giữa Việt Nam
+                và Pháp năm 1992. Thành công ấy đã mở ra một cánh cửa mới – nơi
+                văn hóa Việt được cất vang giữa lòng thế giới.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="f3_2.png" />
+
+            <div class="overlay">
+              <h1>Cột mốc năm 2000 – Festival chính thức khai sinh</h1>
+              <p>
+                Tháng 10/1998, Chính phủ Việt Nam chính thức cho phép tổ chức
+                Festival Huế 2000. Từ đó, Huế không chỉ là kinh đô xưa – mà còn
+                là “kinh đô lễ hội” hôm nay.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="f4.jpg" />
+
+            <div class="overlay">
+              <h1>Vinh danh di sản – Kết nối truyền thống và hiện đại</h1>
+              <p>
+                Festival Huế là nơi tỏa sáng của Nhã nhạc cung đình, Mộc bản
+                triều Nguyễn, nón lá Tây Hồ... Nhưng cũng là sân chơi cho nghệ
+                thuật đương đại, sắp đặt ánh sáng, trình diễn tương tác.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="f5.jpg" />
+
+            <div class="overlay">
+              <h1>Cầu nối văn hóa toàn cầu</h1>
+              <p>
+                Mỗi mùa lễ hội là một cơ hội để các quốc gia giao lưu, để âm
+                nhạc, nghệ thuật và tinh thần dân tộc được lan tỏa. Festival Huế
+                – nơi những nền văn hóa gặp gỡ và kết nối bằng trái tim.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="f6.jpg" />
+
+            <div class="overlay">
+              <h1>Lời mời đến từ Huế</h1>
+              <p>
+                Hãy đến Huế, vào một mùa lễ hội gần nhất. Cùng nhau cảm nhận di
+                sản sống động, nơi mỗi bước chân là một hành trình văn hóa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tải thư viện cần thiết -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+    <!-- Script của bạn -->
+    <script src="script.js"></script>
+  </body>
 </html>
