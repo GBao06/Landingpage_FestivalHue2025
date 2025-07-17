@@ -46,7 +46,7 @@ section {
   font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: 1px;
+  letter-spacing: -0.5px;
   margin-bottom: 36px;
   color: #fff;
 }
@@ -57,6 +57,7 @@ section {
   line-height: 1.5;
   margin-bottom: 30px;
   color: #fff;
+  letter-spacing: 0.75px;
 }
 
 .btn:link,
@@ -83,7 +84,8 @@ section {
 .swiper {
   position: relative;
   width: 400px;
-  height: 490px;
+  /* height: 490px; */
+  aspect-ratio: 4 / 5;
 }
 
 .swiper-slide {
