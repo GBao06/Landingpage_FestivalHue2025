@@ -1,184 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lnstyle.css" />
     <title>Document</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"rel="stylesheet"/>
-
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"rel="stylesheet"/>
-    <!-- Font Awesome 6 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-    <!-- MDBootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"rel="stylesheet"/>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/slider.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/sukien.css">
-    <script src="./src/skdslider.js"></script>
-    <script src="./src/skdslider.min.js"></script>
-    
-</head>
-<body>
-    <!-- landingpage -->
-    <div class="wrapper">
-        <header class="header">
-            <div class="logo">
-                <img src="./assets/images/logo-festival.png" alt="">
-            </div>
-            <h2>Festival Hue</h2>
-            <div class="list_menu" id="list_menu">
-                <ul>
-                    <li><a href="./index.html">Trang chủ</a></li>
-                    <li><a href="./index.html">Giới thiệu</a></li>
-                    <li><a href="./index.html">Làng nghề</a></li>
-                    <li><a href="./index.html">Ẩm thực</a></li>
-                    <li><a href="./index.html">Nghệ thuật</a></li>
-                    <li><a href="./index.html">Liên hệ</a></li>
-                </ul>
-            </div>
-            <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- Biểu tượng 3 gạch -->
-            <script>
-                const toggle = document.getElementById('menu-toggle');
-                const menu = document.getElementById('list_menu');
-              
-                toggle.addEventListener('click', () => {
-                  menu.classList.toggle('active');
-                });
-              </script>
-              
-        </header>
-
-
-        <section class="banner">
-            <!-- <video src="./src/gioithieu.mp4" autoplay muted loop></video> -->
-            <!-- <H2>Tinh hoa di sản cố đô</H2>  -->
-            <img src="./assets/images/banner1.jpg" alt="">
-
-
-        </section>
-        
-
-        <section class="lichtrinh container">
-            <h2>🎉 Festival Huế 2025</h2>
-            <p>21 – 26 tháng 6 năm 2025 | Thành phố Huế</p>
-            <div class="container-sukien">
-              <div class="overlay"></div>
-                <div class="container-list">
-                  <div class="container-list-item">
-                      <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                      <div class="container-list-item-text">
-                        <h3> Khai mạc</h3>
-                        <p><i class="fa-solid fa-location-dot"></i>&nbsp;Quảng trường Ngọ Môn</p>
-                        <p><i class="fa-regular fa-calendar"></i>&nbsp;21/6/2025 – Tối</p>
-                      </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Đêm Hoàng Cung</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Đại Nội – Cung Trường Sanh</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp;22–23/6/2025 – Tối</p>
-                    </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Carnaval Đường Phố</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Đường Lê Lợi – Hùng Vương</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp;23–24/6/2025 – Chiều</p>
-                    </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Lễ hội Áo dài</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Bia Quốc Học</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp;24/6/2025</p>
-                    </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Lễ hội Nghề Truyền thống</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Công viên Tứ Tượng</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp;21–26/6/2025</p>
-                    </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Bế mạc</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Ngọ Môn – Đại Nội</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp26/6/2025 – Tối</p>
-                    </div>
-                  </div>
-                  <!-- <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Tết Trung thu: Lễ hội đèn lồng 2024l</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Đại Nội Huế</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp;00:00 | 13/09/2024 - 17/09/2024</p>
-                    </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Huế Tường - vở kịch sân khấu truyền thống, Cảm hứng quá khứ</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Thành phố Huế</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp;14/09/2024</p>
-                    </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Tết Trung thu: Biểu diễn đường phố nhảy kỳ lân</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Thành phố Huế</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp;20:00 | 24/09/2024</p>
-                    </div>
-                  </div> -->
-                </div>
-            </div>
-        </section>
-
-
-
-        <footer class="text-center bg-body-tertiary footer">
-          <div class="container pt-4">
-            <section class="mb-4">
-              <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button">
-                <i class="fab fa-google"></i>
-              </a>
-              <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button">
-                <i class="fab fa-github"></i>
-              </a>
-            </section>
+  </head>
+  <body>
+    <section class="craft-section">
+      <h1 class="title">Làng nghề</h1>
+      <div class="wrapper">
+        <!-- Làng nghề nón lá -->
+        <div class="card">
+          <div class="poster">
+            <img src="nonla.jpg" alt="Non la" />
           </div>
-          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2025 Bản quyền: <a class="text-body" href="#">HaiCauFixBugCode🤡</a>
+          <div class="details">
+            <h1>Nón lá Tây Hồ</h1>
+            <h2>Huế • Truyền thống lâu đời</h2>
+            <div class="tags padd">
+              <span class="tag">Thủ công</span>
+              <span class="tag">Văn hoá</span>
+              <span class="tag">Truyền thống</span>
+            </div>
+            <p class="desc">
+              Làng nghề Tây Hồ nổi tiếng với nghề làm nón lá truyền thống, mang
+              đậm nét văn hóa của vùng đất Cố đô.
+            </p>
           </div>
-        </footer>
+        </div>
+        <!-- Làng hoa giấy Thanh Tiên -->
+        <div class="card">
+          <div class="poster">
+            <img src="hoa-giay.jpg" alt="Hoa giay" />
+          </div>
+          <div class="details">
+            <h1>Hoa giấy Thanh Tiên</h1>
+            <h2>Phú Mậu, Huế • 300 năm lịch sử</h2>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
-</body>
+            <div class="tags">
+              <span class="tag">Thủ công</span>
+              <span class="tag">Trang trí</span>
+              <span class="tag">Dân gian</span>
+            </div>
+            <p class="desc">
+              Nổi tiếng với nghệ thuật làm hoa giấy tinh xảo dùng trong cúng lễ
+              và trang trí, làng nghề đã tồn tại từ thế kỷ 18 đến nay.
+            </p>
+          </div>
+        </div>
+        <!-- Làng đan lát Bao La -->
+        <div class="card">
+          <div class="poster">
+            <img src="danlat.jpg" alt="Dan lat" />
+          </div>
+          <div class="details">
+            <h1>Đan lát Bao La</h1>
+            <h2>Quảng Điền, Huế • Từ thế kỷ 19</h2>
+
+            <div class="tags">
+              <span class="tag yellow">Thủ công</span>
+              <span class="tag">Tre nứa</span>
+              <span class="tag blue">Gia dụng</span>
+            </div>
+            <p class="desc">
+              Làng Bao La nổi bật với các sản phẩm tre đan truyền thống như rổ
+              rá, mẹt, mang tính ứng dụng cao và thân thiện môi trường.
+            </p>
+          </div>
+        </div>
+        <!-- Gốm Phước Tích -->
+        <div class="card">
+          <div class="poster">
+            <img src="gom.jpg" alt="Gom Phuoc Tich" />
+          </div>
+          <div class="details">
+            <h1>Gốm Phước Tích</h1>
+            <h2>Phong Điền, Huế • Hơn 500 năm</h2>
+
+            <div class="tags">
+              <span class="tag yellow">Gốm cổ</span>
+              <span class="tag">Nghệ thuật</span>
+              <span class="tag blue">Du lịch</span>
+            </div>
+            <p class="desc">
+              Làng gốm cổ nổi tiếng từ thời chúa Nguyễn với kỹ thuật gốm thủ
+              công không men độc đáo, mang nét dân dã và thanh tao.
+            </p>
+          </div>
+        </div>
+        <!-- Làng hương Thủy Xuân -->
+        <div class="card">
+          <div class="poster">
+            <img src="lang-huong.jpg" alt="Huong Thuy Xuan" />
+          </div>
+          <div class="details">
+            <h1>Hương Thủy Xuân</h1>
+            <h2>Thành phố Huế • Nét thơm truyền thống</h2>
+
+            <div class="tags padds">
+              <span class="tag yellow">Tâm linh</span>
+              <span class="tag">Hương liệu</span>
+              <span class="tag blue">Truyền thống</span>
+            </div>
+            <p class="desc">
+              Là địa chỉ nổi tiếng với những bó hương đầy màu sắc và mùi thơm
+              đặc trưng, thu hút cả khách du lịch và nghệ nhân làm phim ảnh.
+            </p>
+          </div>
+        </div>
+        <!-- Làng đúc đồng Phường Đúc -->
+        <div class="card">
+          <div class="poster">
+            <img src="ducdong.jpg" alt="Duc Dong" />
+          </div>
+          <div class="details">
+            <h1>Đúc đồng Phường Đúc</h1>
+            <h2>Thành phố Huế • Hơn 400 năm truyền thống</h2>
+
+            <div class="tags padds">
+              <span class="tag yellow">Thủ công</span>
+              <span class="tag">Tôn giáo</span>
+              <span class="tag blue">Truyền thống</span>
+            </div>
+            <p class="desc">
+              Làng nghề chuyên sản xuất đồ đồng truyền thống phục vụ cung đình
+              xưa và nhu cầu tâm linh, điển hình là chuông chùa và tượng thờ.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
