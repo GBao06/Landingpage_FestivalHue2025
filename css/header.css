@@ -29,14 +29,14 @@
 }
 .list_menu{
   padding: 10px;
+  display: flex;
 }
-.list_menu ul{
+.list_menu a{
   padding: 10px;
   list-style: none;
-  display: flex;
 
 }
-.list_menu li{
+.list_menu a{
   margin: auto 0;
   padding: 5px 10px;
   text-transform: uppercase;
@@ -45,7 +45,7 @@
 }
 
 a {
-  display: inline-block; 
+  /* display: inline-block;  */
   text-decoration: none;
   font-size: 18px;
   transition: transform 0.3s ease-out;
@@ -93,11 +93,18 @@ a:hover {
     .menu-toggle {
       display: block;
     }
-    .list_menu ul{
+    .list_menu a{
         display: block;
         flex-direction: column;
     }
-    .list_menu li{
+    .list_menu a{
         margin: 10px 0;
     }
   }
+  nav a.active {
+    background-color: #F44336; /* màu nền khi đang active */
+    color: white; /* chữ trắng cho dễ nhìn */
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  

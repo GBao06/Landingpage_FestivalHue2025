@@ -5,7 +5,7 @@ body {
 .wrapper{
     margin: 0px auto;
     padding: 0;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     height: auto;
@@ -35,4 +35,14 @@ html {
 
 #backToTop:hover {
   background-color: #555;
+}
+
+.amthuc{
+  height: 500px;
+  background-color: #555;
+}
+
+.nghethuat{
+  height: 500px;
+  background-color: antiquewhite;
 }
