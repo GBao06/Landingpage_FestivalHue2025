@@ -1,496 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festival Huế 2025</title>
-    <link rel="icon" type="image/png" href="./assets/images/logo-festival-hue-khong-nen-635x631.webp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"rel="stylesheet"/>
-
-    <!-- Font Awesome -->
-    <!-- Font Awesome 6 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-    <!-- MDBootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"rel="stylesheet"/>
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/lnstyle.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/sukien.css">
-    <link rel="stylesheet" href="./css/gioithieu.css">
-    <link rel="stylesheet" href="./css/scroll-effect.css">
-    <link rel="stylesheet" href="./css/banner.css">
-    <script src="./js/scroll-effect.js"></script>
-</head>
-<body>
-    <!-- landingpage -->
-    <div class="wrapper">
-        <header class="header">
-            <div class="logo">
-                <img src="./assets/images/logo-festival.png" alt="">
-            </div>
-            <h2>Festival Huế 2025</h2>
-            <nav class="list_menu" id="list_menu">
-                  <a href="#trangchu">Trang chủ</a>
-                  <a href="#gioithieu">Giới thiệu</a>
-                  <a href="#langnghe">Làng nghề</a>
-                  <a href="#amthuc">Ẩm thực</a>
-                  <a href="#nghethuat">Nghệ thuật</a>
-                  <a href="#lichtrinh">Lịch trình</a>
-                  <a href="#lienhe">Liên hệ</a>
-                
-            </nav>
-            <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- Biểu tượng 3 gạch -->
-            <script>
-                const toggle = document.getElementById('menu-toggle');
-                const menu = document.getElementById('list_menu');
-              
-                toggle.addEventListener('click', () => {
-                  menu.classList.toggle('active');
-                });
-              </script>
-              
-        </header>
-
-
-        <section class="banner" id="trangchu">
-          <!-- <div id="tsparticles "></div> -->
-          <div class="section">
-            <div class="content">
-              <h1>Festival Huế!</h1>
-              <p>
-                Festival Huế - nơi hội tụ tinh hoa văn hóa dân tộc và giao lưu quốc
-                tế…
-              </p>
-              <a href="#gioithieu" class="btn">Khám phá ngay &darr;</a>
-            </div>
-      
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./src/f1.jpg" />
-      
-                  <div class="overlay_text">
-                    <h1>Festival Huế – Hành trình của cảm xúc</h1>
-                    <p>
-                      Giữa lòng Cố đô cổ kính, Festival Huế là bản hòa âm rực rỡ của
-                      quá khứ và hiện đại. Nơi đây, mỗi sắc màu văn hóa đều được tôn
-                      vinh – mỗi khoảnh khắc là một ký ức sống động.
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img src="./src/f2.jpg" />
-      
-                  <div class="overlay_text">
-                    <h1>Festival Việt – Pháp 1992 đến lễ hội mang tầm quốc gia</h1>
-                    <p>
-                      Festival Huế ra đời từ một sự kiện hợp tác văn hóa giữa Việt Nam
-                      và Pháp năm 1992. Thành công ấy đã mở ra một cánh cửa mới – nơi
-                      văn hóa Việt được cất vang giữa lòng thế giới.
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img src="./src/f3_2.png" />
-      
-                  <div class="overlay_text">
-                    <h1>Cột mốc năm 2000 – Festival chính thức khai sinh</h1>
-                    <p>
-                      Tháng 10/1998, Chính phủ Việt Nam chính thức cho phép tổ chức
-                      Festival Huế 2000. Từ đó, Huế không chỉ là kinh đô xưa – mà còn
-                      là “kinh đô lễ hội” hôm nay.
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img src="./src/f4.jpg" />
-      
-                  <div class="overlay_text">
-                    <h1>Vinh danh di sản – Kết nối truyền thống và hiện đại</h1>
-                    <p>
-                      Festival Huế là nơi tỏa sáng của Nhã nhạc cung đình, Mộc bản
-                      triều Nguyễn, nón lá Tây Hồ... Nhưng cũng là sân chơi cho nghệ
-                      thuật đương đại, sắp đặt ánh sáng, trình diễn tương tác.
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img src="./src/f5.jpg" />
-      
-                  <div class="overlay_text">
-                    <h1>Cầu nối văn hóa toàn cầu</h1>
-                    <p>
-                      Mỗi mùa lễ hội là một cơ hội để các quốc gia giao lưu, để âm
-                      nhạc, nghệ thuật và tinh thần dân tộc được lan tỏa. Festival Huế
-                      – nơi những nền văn hóa gặp gỡ và kết nối bằng trái tim.
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img src="./src/f6.jpg" />
-      
-                  <div class="overlay_text">
-                    <h1>Lời mời đến từ Huế</h1>
-                    <p>
-                      Hãy đến Huế, vào một mùa lễ hội gần nhất. Cùng nhau cảm nhận di
-                      sản sống động, nơi mỗi bước chân là một hành trình văn hóa.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <body>
+    <art-section>
+      <div class="content">
+        <h1>Nghệ thuật Huế – Tinh hoa vang vọng cố đô</h1>
+        <p>
+          Huế là mảnh đất hội tụ những giá trị nghệ thuật độc đáo như
+          <strong>Nhã nhạc cung đình, Ca Huế, múa dân gian, tuồng cổ...</strong>
+          Những tiết mục đặc sắc không chỉ là di sản văn hóa, mà còn là hơi thở
+          sống động trong từng mùa lễ hội.Tại Festival Huế, nghệ thuật trở thành
+          nhịp cầu kết nối truyền thống với hiện đại, mang đến trải nghiệm giàu
+          cảm xúc cho công chúng trong nước và quốc tế.
+        </p>
+      </div>
+      <div class="stack">
+        <div class="card card-nghe-thuat">
+          <div class="card-bg">
+            <img src="nhanhac.jpg" alt="Nhã nhạc cung đình Huế" />
           </div>
-          <!-- Tải thư viện cần thiết -->
-          <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
-       
-          <!-- Script của bạn -->
-          <script src="./js/script.js"></script>
-
-
-        </section>
-        
-        <section class="gioithieu" id="gioithieu">
-          <div class="overlay-gt"> 
-          </div>
-          <div class="img"><img src="./assets/images/hue-1.jpg" alt=""></div>
-          <div class="text">
-            <h2>Festival Huế 2025 – Rực rỡ sắc màu văn hóa</h2>
-            <p><strong>Festival Huế</strong> là lễ hội văn hóa, nghệ thuật mang tầm quốc tế được tổ chức định kỳ tại thành phố Huế –
-              cố đô giàu bản sắc của Việt Nam. Đây là dịp để tôn vinh di sản văn hóa Huế, quảng bá hình ảnh đất nước, 
-              con người và thúc đẩy phát triển du lịch, giao lưu văn hóa. 
-              Festival quy tụ nhiều hoạt động đặc sắc như lễ hội đường phố, trình diễn áo dài,
-                nghệ thuật truyền thống và hiện đại từ nhiều quốc gia.
+          <div class="card-overlay">
+            <h2>Nhã nhạc cung đình Huế</h2>
+            <img src="nhanhac.jpg" alt="Nhã nhạc Huế" class="overlay-img" />
+            <p>
+              Nhã nhạc cung đình là loại hình âm nhạc trang trọng bậc nhất được
+              biểu diễn trong các dịp lễ nghi hoàng gia dưới triều Nguyễn. Đây
+              là di sản văn hóa phi vật thể đại diện của nhân loại được UNESCO
+              công nhận năm 2003.
             </p>
           </div>
-        </section>
-
-
-        <section class="craft-section" id="langnghe">
-          <h1 class="title">🏡 Làng nghề truyền thống</h1>
-          <p>Nơi lưu giữ tinh hoa văn hóa dân tộc qua bàn tay người thợ</p>
-          <div class="wrapper-craft">
-            <!-- Làng nghề nón lá -->
-            <div class="card">
-              <div class="poster">
-                <img src="./src/nonla.jpg" alt="Non la" />
-              </div>
-              <div class="details">
-                <h1>Nón lá Tây Hồ</h1>
-                <h2>Huế • Truyền thống lâu đời</h2>
-                <div class="tags padd">
-                  <span class="tag">Thủ công</span>
-                  <span class="tag">Văn hoá</span>
-                  <span class="tag">Truyền thống</span>
-                </div>
-                <p class="desc">
-                  Làng nghề Tây Hồ nổi tiếng với nghề làm nón lá truyền thống, mang
-                  đậm nét văn hóa của vùng đất Cố đô.
-                </p>
-              </div>
-            </div>
-            <!-- Làng hoa giấy Thanh Tiên -->
-            <div class="card">
-              <div class="poster">
-                <img src="./src/hoa-giay.jpg" alt="Hoa giay" />
-              </div>
-              <div class="details">
-                <h1>Hoa giấy Thanh Tiên</h1>
-                <h2>Phú Mậu, Huế • 300 năm lịch sử</h2>
-    
-                <div class="tags">
-                  <span class="tag">Thủ công</span>
-                  <span class="tag">Trang trí</span>
-                  <span class="tag">Dân gian</span>
-                </div>
-                <p class="desc">
-                  Nổi tiếng với nghệ thuật làm hoa giấy tinh xảo dùng trong cúng lễ
-                  và trang trí, làng nghề đã tồn tại từ thế kỷ 18 đến nay.
-                </p>
-              </div>
-            </div>
-            <!-- Làng đan lát Bao La -->
-            <div class="card">
-              <div class="poster">
-                <img src="./src/danlat.jpg" alt="Dan lat" />
-              </div>
-              <div class="details">
-                <h1>Đan lát Bao La</h1>
-                <h2>Quảng Điền, Huế • Từ thế kỷ 19</h2>
-    
-                <div class="tags">
-                  <span class="tag yellow">Thủ công</span>
-                  <span class="tag">Tre nứa</span>
-                  <span class="tag blue">Gia dụng</span>
-                </div>
-                <p class="desc">
-                  Làng Bao La nổi bật với các sản phẩm tre đan truyền thống như rổ
-                  rá, mẹt, mang tính ứng dụng cao và thân thiện môi trường.
-                </p>
-              </div>
-            </div>
-            <!-- Gốm Phước Tích -->
-            <div class="card">
-              <div class="poster">
-                <img src="./src/gom.jpg" alt="Gom Phuoc Tich" />
-              </div>
-              <div class="details">
-                <h1>Gốm Phước Tích</h1>
-                <h2>Phong Điền, Huế • Hơn 500 năm</h2>
-    
-                <div class="tags">
-                  <span class="tag yellow">Gốm cổ</span>
-                  <span class="tag">Nghệ thuật</span>
-                  <span class="tag blue">Du lịch</span>
-                </div>
-                <p class="desc">
-                  Làng gốm cổ nổi tiếng từ thời chúa Nguyễn với kỹ thuật gốm thủ
-                  công không men độc đáo, mang nét dân dã và thanh tao.
-                </p>
-              </div>
-            </div>
-            <!-- Làng hương Thủy Xuân -->
-            <div class="card">
-              <div class="poster">
-                <img src="./src/lang-huong.jpg" alt="Huong Thuy Xuan" />
-              </div>
-              <div class="details">
-                <h1>Hương Thủy Xuân</h1>
-                <h2>Thành phố Huế • Nét thơm truyền thống</h2>
-    
-                <div class="tags padds">
-                  <span class="tag yellow">Tâm linh</span>
-                  <span class="tag">Hương liệu</span>
-                  <span class="tag blue">Truyền thống</span>
-                </div>
-                <p class="desc">
-                  Là địa chỉ nổi tiếng với những bó hương đầy màu sắc và mùi thơm
-                  đặc trưng, thu hút cả khách du lịch và nghệ nhân làm phim ảnh.
-                </p>
-              </div>
-            </div>
-            <!-- Làng đúc đồng Phường Đúc -->
-            <div class="card">
-              <div class="poster">
-                <img src="./src/ducdong.jpg" alt="Duc Dong" />
-              </div>
-              <div class="details">
-                <h1>Đúc đồng Phường Đúc</h1>
-                <h2>Thành phố Huế • Hơn 400 năm truyền thống</h2>
-    
-                <div class="tags padds">
-                  <span class="tag yellow">Thủ công</span>
-                  <span class="tag">Tôn giáo</span>
-                  <span class="tag blue">Truyền thống</span>
-                </div>
-                <p class="desc">
-                  Làng nghề chuyên sản xuất đồ đồng truyền thống phục vụ cung đình
-                  xưa và nhu cầu tâm linh, điển hình là chuông chùa và tượng thờ.
-                </p>
-              </div>
-            </div>
+        </div>
+        <!-- Lục cúng hoa đăng -->
+        <div class="card card-nghe-thuat">
+          <div class="card-bg">
+            <img src="luccung.jpg" alt="Lục cúng hoa đăng" />
           </div>
-        </section>
-        
-        <section class="amthuc" id="amthuc">amthuc</section>
-        <section class="nghethuat" id="nghethuat">nghe thuat</section>
-        <section class="lichtrinh " id="lichtrinh">
-            <h2>🎉 Festival Huế 2025</h2>
-            <p>21 – 26 tháng 6 năm 2025 | Thành phố Huế</p>
-            <div class="container-sukien">
-              <div class="overlay"></div>
-                <div class="container-list">
-                  <div class="container-list-item">
-                      <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                      <div class="container-list-item-text">
-                        <h3> Khai mạc</h3>
-                        <p><i class="fa-solid fa-location-dot"></i>&nbsp;Quảng trường Ngọ Môn</p>
-                        <p><i class="fa-regular fa-calendar"></i>&nbsp;21/6/2025 – Tối</p>
-                      </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Đêm Hoàng Cung</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Đại Nội – Cung Trường Sanh</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp;22–23/6/2025 – Tối</p>
-                    </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Carnaval Đường Phố</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Đường Lê Lợi – Hùng Vương</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp;23–24/6/2025 – Chiều</p>
-                    </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Lễ hội Áo dài</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Bia Quốc Học</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp;24/6/2025</p>
-                    </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Lễ hội Nghề Truyền thống</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Công viên Tứ Tượng</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp;21–26/6/2025</p>
-                    </div>
-                  </div>
-                  <div class="container-list-item">
-                    <div class="container-list-item-img"><img src="./assets/images/ico-sukien-list.png" alt=""></div>
-                    <div class="container-list-item-text">
-                      <h3>Bế mạc</h3>
-                      <p><i class="fa-solid fa-location-dot"></i>&nbsp;Ngọ Môn – Đại Nội</p>
-                      <p><i class="fa-regular fa-calendar"></i>&nbsp26/6/2025 – Tối</p>
-                    </div>
-                  </div>
-          
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- Footer -->
-        <footer class="text-center text-lg-start bg-body-tertiary text-muted" id="lienhe">
-          <!-- Section: Social media -->
-          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <!-- Left -->
-            <div class="me-5 d-none d-lg-block">
-              <span>Get connected with us on social networks:</span>
-            </div>
-            <!-- Left -->
-
-            <!-- Right -->
-            <div>
-              <a href="" class="me-4 text-reset">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="" class="me-4 text-reset">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="" class="me-4 text-reset">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="" class="me-4 text-reset">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="" class="me-4 text-reset">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="" class="me-4 text-reset">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-            <!-- Right -->
-          </section>
-          <!-- Section: Social media -->
-
-          <!-- Section: Links  -->
-          <section class="">
-            <div class="container text-center text-md-start mt-5">
-              <!-- Grid row -->
-              <div class="row mt-3">
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                  <!-- Content -->
-                  <h6 class="text-uppercase fw-bold mb-4">
-                    <i class="fas fa-gem me-3"></i>Company name
-                  </h6>
-                  <p>
-                    Here you can use rows and columns to organize your footer content. Lorem ipsum
-                    dolor sit amet, consectetur adipisicing elit.
-                  </p>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                  <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">
-                    Products
-                  </h6>
-                  <p>
-                    <a href="#!" class="text-reset">Angular</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-reset">React</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-reset">Vue</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-reset">Laravel</a>
-                  </p>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                  <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">
-                    Useful links
-                  </h6>
-                  <p>
-                    <a href="#!" class="text-reset">Pricing</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-reset">Settings</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-reset">Orders</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-reset">Help</a>
-                  </p>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                  <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                  <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-                  <p>
-                    <i class="fas fa-envelope me-3"></i>
-                    info@example.com
-                  </p>
-                  <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                  <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-                </div>
-                <!-- Grid column -->
-              </div>
-              <!-- Grid row -->
-            </div>
-          </section>
-          <!-- Section: Links  -->
-
-          <!-- Copyright -->
-          <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2021 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+          <div class="card-overlay">
+            <h2>Lục cúng hoa đăng</h2>
+            <img src="luccung.jpg" alt="Lục cúng" class="overlay-img" />
+            <p>
+              Lục cúng hoa đăng là nghi lễ dâng hoa và ánh sáng lên chư Phật,
+              mang ý nghĩa tịnh hóa thân tâm. Nghi thức này thường được biểu
+              diễn trong các lễ hội tâm linh ở Huế, tạo nên không gian huyền ảo,
+              thiêng liêng.
+            </p>
           </div>
-          <!-- Copyright -->
-        </footer>
-        <!-- Footer -->
+        </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
-   
-<button id="backToTop" title="Lên đầu trang">↑</button>
-<script src="./js/backtotop.js"></script>
-<script src="./js/headercolor.js"></script>
-</body>
+        <!-- Ca Huế trên sông Hương -->
 
+        <div class="card card-nghe-thuat">
+          <div class="card-bg">
+            <img src="cahue.png" alt="Ca Huế trên sông Hương" />
+          </div>
+          <div class="card-overlay">
+            <h2>Ca Huế trên sông Hương</h2>
+            <img src="cahue.png" alt="Ca Huế" class="overlay-img" />
+            <p>
+              Ca Huế là sự kết hợp giữa nhạc lễ cung đình và dân ca. Các tiết
+              mục biểu diễn trên thuyền rồng giữa dòng Hương Giang thơ mộng tạo
+              nên trải nghiệm du lịch văn hóa độc đáo, đậm chất Huế.
+            </p>
+          </div>
+        </div>
+
+        <!-- Hầu đồng – Chầu văn -->
+
+        <div class="card card-nghe-thuat">
+          <div class="card-bg">
+            <img src="chauvan.jpg" alt="Chầu văn" />
+          </div>
+          <div class="card-overlay">
+            <h2>Hầu đồng – Chầu văn</h2>
+            <img src="chauvan.jpg" alt="Chầu văn Huế" class="overlay-img" />
+            <p>
+              Nghi thức chầu văn gắn liền với tín ngưỡng thờ Mẫu. Với sự phối
+              hợp giữa âm nhạc, lời văn và diễn xướng, chầu văn tạo nên không
+              khí huyền bí, linh thiêng trong các dịp lễ hội tâm linh truyền
+              thống Huế.
+            </p>
+          </div>
+        </div>
+
+        <!-- Múa Lân Sư Rồng -->
+        <div class="card card-nghe-thuat">
+          <div class="card-bg">
+            <img src="mualan.jpg" alt="Múa lân sư rồng" />
+          </div>
+          <div class="card-overlay">
+            <h2>Múa Lân Sư Rồng</h2>
+            <img src="mualan.jpg" alt="Múa lân" class="overlay-img" />
+            <p>
+              Múa lân là loại hình nghệ thuật dân gian được biểu diễn vào dịp lễ
+              tết, khai trương hay Festival Huế. Các đội lân trình diễn kỹ thuật
+              điêu luyện kết hợp với tiếng trống tạo không khí sôi động, hào
+              hứng.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tuồng cổ Huế -->
+
+        <div class="card card-nghe-thuat">
+          <div class="card-bg">
+            <img src="tuongco.jpg" alt="Tuồng cổ Huế" />
+          </div>
+          <div class="card-overlay">
+            <h2>Tuồng cổ Huế</h2>
+            <img src="tuongco.jpg" alt="Tuồng cổ" class="overlay-img" />
+            <p>
+              Tuồng cổ Huế là loại hình sân khấu truyền thống thể hiện những
+              tích truyện lịch sử, nhân nghĩa trung hiếu. Với hóa trang đặc sắc
+              và diễn xuất điêu luyện, tuồng mang đến chiều sâu nghệ thuật đậm
+              chất cung đình.
+            </p>
+          </div>
+        </div>
+      </div>
+    </art-section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+    <!-- Script của bạn -->
+    <script src="script.js"></script>
+  </body>
 </html>
