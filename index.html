@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/gioithieu.css" />
     <link rel="stylesheet" href="./css/header.css" />
-
+    <link rel="stylesheet" href="./css/craft_village.css">
     <title>Document</title>
     <link
       rel="stylesheet"
@@ -27,12 +27,12 @@
       </a>
       <nav class="menu">
         <ul class="list-menu-nav">
-          <li><a href="#gioithieu" class="menu-link">Giới thiệu</a></li>
-          <li><a href="#langnghe" class="menu-link">Làng nghề</a></li>
-          <li><a href="#amthuc" class="menu-link">Ẩm thực</a></li>
-          <li><a href="#nghethuat" class="menu-link">Nghệ thuật</a></li>
-          <li><a href="#lichtrinh" class="menu-link">Lịch trình</a></li>
-          <li><a href="#lienhe" class="menu-link">Liên hệ</a></li>
+          <li><a href="#gioithieu" class="menu-link" data-slide="0">Giới thiệu</a></li>
+          <li><a href="#langnghe" class="menu-link" data-slide="1">Làng nghề</a></li>
+          <li><a href="#amthuc" class="menu-link" data-slide="2">Ẩm thực</a></li>
+          <li><a href="#nghethuat" class="menu-link" data-slide="3">Nghệ thuật</a></li>
+          <li><a href="#lichtrinh" class="menu-link" data-slide="4">Lịch trình</a></li>
+          <li><a href="#lienhe" class="menu-link" data-slide="5">Liên hệ</a></li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -56,9 +56,57 @@
           </div>
           <div class="background" data-item="one"></div>
         </div>
-      </div>
+
+        <!-- craft-village -->
+        <div class="swiper-slide">
+          <div class="craft-village">
+            <div class="content-craft-village">
+              <section id="danlat" style="--position: 0;">
+                  <div class="image"></div>
+                  <div class="title">Đan lát</div>
+                  <!-- <div class="button">Book now</div> -->
+              </section>
+              <section id="ducdong" style="--position: 1;">
+                  <div class="image"></div>
+                  <div class="title">Đúc đồng</div>
+                  <!-- <div class="button">Book now</div> -->
+              </section>
+              <section id="gom" style="--position: 2;">
+                  <div class="image"></div>
+                  <div class="title">Gốm</div>
+                  <!-- <div class="button">Book now</div> -->
+              </section>
+              <section id="hoagiay" style="--position: 3;">
+                  <div class="image"></div>
+                  <div class="title">Hoa giấy</div>
+                  <!-- <div class="button">Book now</div> -->
+              </section>
+              <section id="langhuong" style="--position: 4;">
+                  <div class="image"></div>
+                  <div class="title">Làng hương</div>
+                  <!-- <div class="button">Book now</div> -->
+              </section>
+              <section id="nonla" style="--position: 5;">
+                  <div class="image"></div>
+                  <div class="title">Nón lá</div>
+                  <!-- <div class="button">Book now</div> -->
+              </section>
+            </div>
+          </div>
+        </div>
       <div class="swiper-pagination"></div>
+
     </section>
+
+
+
+
+
+
+
+
+
+    <script src="./js/craft_village.js"></script>
     <script src="./js/gt.js"></script>
     <script
       type="module"

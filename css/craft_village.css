@@ -1,0 +1,121 @@
+
+:root {
+  font-family: "Urbanist";
+	--bg: #0b0a0d;
+	--bg-2: #1b1c1f;
+	--bg-2: #1f1c21;
+	--accent: #864DEB;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.craft-village {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background: var(--bg);
+  overflow: hidden;
+  display: grid;
+	place-content: center;
+  color: var(--primary-text);
+	user-select: none
+}
+.content-craft-village {
+	--scroll: 1;
+	height: 20rem;
+	width: 20rem;
+	position: relative;
+
+}
+.content-craft-village:hover {
+	--dscroll: 1.6;
+}
+.content-craft-village {
+	cursor: grab;
+  }
+  .content-craft-village:active {
+	cursor: grabbing;
+  }
+  
+.content-craft-village > section {
+	--relPosition: 1;
+	position: absolute;
+	top: 0;
+	left: calc(var(--relPosition) * 80%);
+	height: 100%;
+	width: 100%;
+	padding: 0.75rem;
+	border-radius: 2rem;
+	display: flex;
+	flex-direction: column;
+	box-shadow: inset 0 0 0 0.125rem #ffffff11;
+	overflow: hidden;
+	isolation: isolate;
+	z-index: calc(1000 + 100 * min(var(--relPosition), -1*var(--relPosition)));
+	/* transform: translateX(calc(var(--relPosition) * 100%));
+	transition: transform 0.3s ease; */
+
+}
+.content-craft-village > section:after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: var(--image) center center / cover;
+	z-index: -1;
+	border-radius: inherit;
+	filter: brightness(50%) blur(0.25rem);
+	transform: scale(1);
+}
+
+.content-craft-village > section > .image {
+	flex-grow: 1;
+	border-radius: 1.25rem;
+	box-shadow: 0 0 0.75rem #00000077;
+	background: var(--image) center center / cover;
+}
+
+.content-craft-village > section > .title {
+	color: white;
+	font-weight: bold;
+	padding: 0.25rem 0.125rem;
+	font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.content-craft-village > section > .button {
+	height: 2.5rem;
+	border-radius: 1.25rem;
+	background: #ffffff22;
+	backdrop-filter: brightness(200%) blur(2rem);
+	display: grid;
+	place-content: center;
+	font-weight: 500;
+	color: white;
+}
+
+
+
+
+#danlat {
+  --image: url('../assets/images/LangNghe/danlat.jpg'); 
+}
+#ducdong {
+    --image: url('../assets/images/LangNghe/ducdong.jpg'); 
+  }
+#gom {
+  --image: url('../assets/images/LangNghe/gom.jpg'); 
+}
+#hoagiay {
+    --image: url('../assets/images/LangNghe/hoa-giay.jpg'); 
+}  
+#langhuong {
+    --image: url('../assets/images/LangNghe/lang-huong.jpg'); 
+}
+#nonla {
+    --image: url('../assets/images/LangNghe/nonla.jpg'); 
+  }

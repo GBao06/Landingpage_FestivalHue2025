@@ -36,3 +36,14 @@ const headerEl = document.querySelector(".header");
 btnNavEl?.addEventListener("click", () => {
   headerEl.classList.toggle("nav-open");
 });
+
+
+document.querySelectorAll(".menu-link").forEach(link => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const slideIndex = parseInt(this.dataset.slide);
+    if (!isNaN(slideIndex)) {
+      swiper.slideTo(slideIndex);
+    }
+  });
+});
