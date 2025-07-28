@@ -91,7 +91,7 @@ body {
 /* background */
 
 .background[data-item="one"] {
-  background: url("hue-banner.jpg");
+  background: url("../assets/images/hue-banner.jpg");
   background-size: cover;
   background-position: 50% 40%;
 }
