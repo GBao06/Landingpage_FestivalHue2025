@@ -25,7 +25,6 @@ body {
   height: 100vh;
 }
 
-
 /* content */
 
 .content-gt {
@@ -259,6 +258,18 @@ body {
     border-radius: 0;
     box-shadow: none;
     padding: 0;
+  }
+
+  /* Bỏ bo góc của toàn bộ menu */
+  .header .menu .list-menu-nav {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  /* Bỏ bo góc của các mục trong menu */
+  .header .menu .menu-link {
+    border-radius: 0;
+    box-shadow: none;
   }
 
   .menu-link:link,
