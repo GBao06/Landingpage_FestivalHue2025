@@ -1,0 +1,60 @@
+@media only screen and (max-width: 1299.98px) {
+  .listOffer {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .listOffer p {
+    line-clamp: 1;
+  }
+
+}
+@media only screen and (max-width: 1199.98px) {
+  .listOffer {
+    width: 60vw;
+  }
+
+}
+@media only screen and (max-width: 1000px) {
+
+  .listOffer {
+    width: 60vw;
+  }
+
+}
+@media only screen and (max-width: 900px) {
+
+  .listOffer .itemOffer {
+    width: 50%;
+  }
+
+}
+@media only screen and (max-width: 797.98px) {
+
+  .listOffer {
+    width: 70vw;
+  }
+
+}
+@media only screen and (max-width: 697.98px) {
+  .relative{
+    height: 500px;
+  }
+  .listOffer {
+    width: 100%;
+  }
+
+  .listOffer p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+
+  .listOffer .itemOffer {
+    width: 100%;
+  }
+  .relative img{
+    height: auto;
+  }
+}
+
+
