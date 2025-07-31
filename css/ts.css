@@ -101,7 +101,7 @@ ul {
   width: 80%;
   margin: auto;
   margin-top: 50px;
-  display: flex;
+  display: flex !important;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
@@ -145,7 +145,7 @@ ul {
 
 .box h3 {
   /* color: #c4cfde; */
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 20px;
   color: #9370db;
 }
@@ -153,7 +153,7 @@ ul {
 .box p {
   color: #fff;
   opacity: 0.5;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .time {
@@ -322,7 +322,7 @@ ul {
     width: 100%;
     max-width: none;
     margin: 20px auto;
-    height: 400px;
+    height: 500px;
     /* margin-bottom: 20px; */
   }
 
