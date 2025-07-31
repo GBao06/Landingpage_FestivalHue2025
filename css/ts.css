@@ -50,7 +50,7 @@ ul {
   margin-top: 30px;
   display: flex;
   align-items: center;
-  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  /* box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e; */
   overflow: hidden;
   /* border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -275,7 +275,7 @@ ul {
   }
 
   .box h3 {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
   /* .box p {
     font-size: 1.1rem;
