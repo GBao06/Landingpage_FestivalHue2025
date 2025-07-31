@@ -1,0 +1,101 @@
+@charset "UTF-8";
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* body{
+  pointer-events: none;
+} */
+
+.sectionSpecialOffer{
+  margin-top: 30px;
+}
+.sectionSpecialOffer h2{
+  color:#e8b44d;
+  font-family: "Salsa", cursive;
+}
+.sectionSpecialOffer p{
+  font-family: inherit;
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 500;
+  text-align: left;
+  color: #f2f2f2;
+}
+.listOffer {
+  width: 45vw;
+  margin: auto;
+}
+.relative{
+  position: relative;
+}
+.relative img{
+
+  height: 360px;
+}
+.details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  padding: 1.5em 1.5em 2em;
+  background: #000a;
+  backdrop-filter: blur(16px) saturate(120%);
+  transition: 0.3s;
+  color: #fff;
+  z-index: 2;
+
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius:10px ;
+}
+
+
+.details h1,
+.details h2 {
+  font-weight: 700;
+}
+
+.details h1 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.details h2 {
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
+.details .tags {
+  display: flex;
+  gap: 0.375em;
+  margin-bottom: 0.875em;
+  font-size: 0.85em;
+}
+
+.details .tags span {
+  padding: 0.35rem 0.65rem;
+  color: #fff;
+  border: 1.5px solid rgba(255 255 255 / 0.4);
+  border-radius: 4px;
+  border-radius: 50px;
+}
+
+/* chỉnh lại tags */
+.details .padd span {
+  padding: 0.3rem 0.6rem !important;
+}
+.details .padds span {
+  padding: 0.2rem 0.5rem !important;
+}
+
+.details .desc {
+  color: #fff;
+  opacity: 0.8;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  font-size: 14px;
+}

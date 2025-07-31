@@ -1,19 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <nav>
-        <ul>
-            <li class="active"><button>Trang chủ</button></li>
-            <li><button>Sự kiện</button></li>
-            <li><button>Liên hệ</button></li>
-            <li><button>Về chúng tôi</button></li>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./static/tailwind/comon.css">
+    <link rel="stylesheet" href="./static/tailwind/output.css">
+    <link rel="stylesheet" href="./static/tailwind/reponsive.css">
+    <script src="./static/vendors/swiper.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5kenarsQpSLykj0PxvF4hyR+KSrfPF5glYJ/XxdcnF7gABG5miFw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/gioithieu.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a href="#">
+        <img src="./assets/images/logo.png" alt="logo" class="logo" />
+      </a>
+      <nav class="menu">
+        <ul class="list-menu-nav">
+          <li>
+            <a href="#gioithieu" class="menu-link" data-slide="0">Giới thiệu</a>
+          </li>
+          <li>
+            <a href="#langnghe" class="menu-link" data-slide="1">Làng nghề</a>
+          </li>
+          <li>
+            <a href="#amthuc" class="menu-link" data-slide="2">Ẩm thực</a>
+          </li>
+          <li>
+            <a href="#nghethuat" class="menu-link" data-slide="3">Nghệ thuật</a>
+          </li>
+          <li>
+            <a href="#lichtrinh" class="menu-link" data-slide="4">Lịch trình</a>
+          </li>
+          <li>
+            <a href="#lienhe" class="menu-link" data-slide="5">Liên hệ</a>
+          </li>
         </ul>
-    </nav>
-</body>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <section class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="content-gt" data-content="one">
+            <h1>Festival Huế 2025 – Rực rỡ sắc màu văn hóa</h1>
+            <p>
+              <strong>Festival Huế</strong> là lễ hội văn hóa – nghệ thuật quốc
+              tế tổ chức định kỳ tại Huế, nhằm tôn vinh di sản văn hóa cố đô,
+              quảng bá hình ảnh đất nước và thúc đẩy du lịch. Sự kiện quy tụ
+              nhiều hoạt động đặc sắc như lễ hội đường phố, trình diễn áo dài và
+              các màn trình diễn nghệ thuật truyền thống lẫn hiện đại từ nhiều
+              quốc gia.
+            </p>
+          </div>
+          <div class="background" data-item="one"></div>
+        </div>
+        <!-- Craft-village -->
+        <div id="bg1-home-page" class="swiper-slide bg1">
+          <div class="sectionSpecialOffer cusContainer py-[65px]">
+            <div class="heading mb-[30px]">
+              <div class="flex gap-[24px] justify-center items-center mb-[16px] w-full">
+                <!-- <img class="max-w-[33px]" src="/static/images/decor-l-section.9e5aea7c1549.pngg"> -->
+                <h2 class="title" style="width: auto;">Làng nghề truyền thống xứ Huế </h2>
+                <!-- <img class="max-w-[33px]" src="/static/images/decor-r-section.36cc8db3810a.pngg"> -->
+              </div>
+              <div>
+                <p style="font-size: 14px; text-align: center;"><strong>Huế</strong> không chỉ nổi tiếng bởi quần thể di tích cố đô mà còn lưu giữ nhiều <strong>làng nghề truyền thống</strong> mang đậm bản sắc văn hóa dân tộc. Trải qua bao thăng trầm lịch sử, các làng nghề như <strong>nón lá Phú Cam, trầm hương Thủy Xuân, lụa Dạ Lê, mộc mỹ nghệ Thụy Lâm,</strong> hay <strong>pháp lam Huế </strong>vẫn bền bỉ tồn tại, phản ánh sự khéo léo, tinh tế của con người Cố đô.</p>
+              </div>
+            </div>
+            <div class="listOffer">
+              <div class="cusSwiper3D js-swiperSpecialOffer swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress">
+                <div class="swiper-wrapper mb-[40px]" id="swiper-wrapper-010fe8282535de223" aria-live="polite" style="transform: translate3d(-765px, 0px, 0px); transition-duration: 0ms; transition-delay: 0ms;"><div class="swiper-slide w-full mb:px-[8px] swiper-slide-prev" role="group" aria-label="15 / 15" data-swiper-slide-index="14" style="width: 765px; transform: translate3d(350px, 0px, -150px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 0; transition-duration: 0ms;">
+                    <a id="item"  class="relative">
+                      <img class="w-full rounded-[16px] _xxs:hidden" src="./assets/images/LangNghe/nonla.jpg" alt="slide 1">
+                      <img class="hidden w-full rounded-[16px] _xxs:aspect-[1] _xxs:object-cover  _xxs:block" src="./assets/images/LangNghe/nonla.jpg" alt="slide 1">
+                      <div class="details hidden">
+                        <h1>Nón lá Tây Hồ</h1>
+                        <h2>Huế • Truyền thống lâu đời</h2>
+                        <div class="tags padd">
+                          <span class="tag">Thủ công</span>
+                          <span class="tag">Văn hoá</span>
+                          <span class="tag">Truyền thống</span>
+                        </div>
+                        <p class="desc">
+                          Làng nghề Tây Hồ nổi tiếng với nghề làm nón lá truyền thống, mang
+                          đậm nét văn hóa của vùng đất Cố đô.
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  
+                  <div class="swiper-slide w-full mb:px-[8px] swiper-slide-visible swiper-slide-fully-visible swiper-slide-active" role="group" aria-label="1 / 15" data-swiper-slide-index="0" style="width: 765px; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 1; transition-duration: 0ms;">
+                    <a id="item" class="relative" >
+                      <img class="w-full rounded-[16px] _xxs:hidden" src="./assets/images/LangNghe/hoa-giay.jpg" alt="slide 1">
+                      <img class="hidden w-full rounded-[16px] _xxs:aspect-[1] _xxs:object-cover  _xxs:block" src="./assets/images/LangNghe/hoa-giay.jpg" alt="slide 1">
+                      <div class="details hidden">
+                        <h1>Hoa giấy Thanh Tiên</h1>
+                        <h2>Phú Mậu, Huế • 300 năm lịch sử</h2>
+                        <div class="tags">
+                          <span class="tag">Thủ công</span>
+                          <span class="tag">Trang trí</span>
+                          <span class="tag">Dân gian</span>
+                        </div>
+                        <p class="desc">
+                          Nổi tiếng với nghệ thuật làm hoa giấy tinh xảo dùng trong cúng lễ
+                          và trang trí, làng nghề đã tồn tại từ thế kỷ 18 đến nay.
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  
+                  <div class="swiper-slide w-full mb:px-[8px] swiper-slide-next" role="group" aria-label="2 / 15" data-swiper-slide-index="1" style="width: 765px; transform: translate3d(-350px, 0px, -150px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 0; transition-duration: 0ms;">
+                    <a id="item" class="relative" >
+                      <img class="w-full rounded-[16px] _xxs:hidden" src="./assets/images/LangNghe/danlat.jpg" alt="slide 1">
+                      <img class="hidden w-full rounded-[16px] _xxs:aspect-[1] _xxs:object-cover  _xxs:block" src="./assets/images/LangNghe/danlat.jpg" alt="slide 1">
+                      <div class="details hidden">
+                        <h1>Đan lát Bao La</h1>
+                        <h2>Quảng Điền, Huế • Từ thế kỷ 19</h2>
+          
+                        <div class="tags">
+                          <span class="tag yellow">Thủ công</span>
+                          <span class="tag">Tre nứa</span>
+                          <span class="tag blue">Gia dụng</span>
+                        </div>
+                        <p class="desc">
+                          Làng Bao La nổi bật với các sản phẩm tre đan truyền thống như rổ
+                          rá, mẹt, mang tính ứng dụng cao và thân thiện môi trường.
+                        </p>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  
+                  <div class="swiper-slide w-full mb:px-[8px]" role="group" aria-label="3 / 15" data-swiper-slide-index="2" style="width: 765px; transform: translate3d(-700px, 0px, -300px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -1; transition-duration: 0ms;">
+                    <a id="item" class="relative" >
+                      <img class="w-full rounded-[16px] _xxs:hidden" src="./assets/images/LangNghe/gom.jpg" alt="slide 1">
+                      <img class="hidden w-full rounded-[16px] _xxs:aspect-[1] _xxs:object-cover  _xxs:block" src="./assets/images/LangNghe/gom.jpg" alt="slide 1">
+                      <div class="details hidden">
+                        <h1>Gốm Phước Tích</h1>
+                        <h2>Phong Điền, Huế • Hơn 500 năm</h2>
+                        <div class="tags">
+                          <span class="tag yellow">Gốm cổ</span>
+                          <span class="tag">Nghệ thuật</span>
+                          <span class="tag blue">Du lịch</span>
+                        </div>
+                        <p class="desc">
+                          Làng gốm cổ nổi tiếng từ thời chúa Nguyễn với kỹ thuật gốm thủ
+                          công không men độc đáo, mang nét dân dã và thanh tao.
+                        </p>
+                      </div>
+                    </a>
+                    
+                  </div>
+                  
+                  <div class="swiper-slide w-full mb:px-[8px]" role="group" aria-label="4 / 15" data-swiper-slide-index="3" style="width: 765px; transform: translate3d(-1050px, 0px, -450px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -2; transition-duration: 0ms;">
+                    <a id="item" class="relative" >
+                      <img class="w-full rounded-[16px] _xxs:hidden" src="./assets/images/LangNghe/lang-huong.jpg" alt="slide 1">
+                      <img class="hidden w-full rounded-[16px] _xxs:aspect-[1] _xxs:object-cover  _xxs:block" src="./assets/images/LangNghe/lang-huong.jpg" alt="slide 1">
+                      <div class="details hidden">
+                        <h1>Hương Thủy Xuân</h1>
+                        <h2>Thành phố Huế • Nét thơm truyền thống</h2>
+            
+                        <div class="tags padds">
+                          <span class="tag yellow">Tâm linh</span>
+                          <span class="tag">Hương liệu</span>
+                          <span class="tag blue">Truyền thống</span>
+                        </div>
+                        <p class="desc">
+                          Là địa chỉ nổi tiếng với những bó hương đầy màu sắc và mùi thơm
+                          đặc trưng, thu hút cả khách du lịch và nghệ nhân làm phim ảnh.
+                        </p>
+                      </div>
+                    </a>
+                    
+                    
+                  </div>
+                  
+                  <div class="swiper-slide w-full mb:px-[8px]" role="group" aria-label="5 / 15" data-swiper-slide-index="4" style="width: 765px; transform: translate3d(-1400px, 0px, -600px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -3; transition-duration: 0ms;">
+                    <a id="item" class="relative" >
+                      <img class="w-full rounded-[16px] _xxs:hidden" src="./assets/images/LangNghe/ducdong.jpg" alt="slide 1">
+                      <img class="hidden w-full rounded-[16px] _xxs:aspect-[1] _xxs:object-cover  _xxs:block" src="./assets/images/LangNghe/danlat.jpg" alt="slide 1">
+                      <div class="details hidden">
+                        <h1>Đúc đồng Phường Đúc</h1>
+                        <h2>Thành phố Huế • Hơn 400 năm truyền thống</h2>
+            
+                        <div class="tags padds">
+                          <span class="tag yellow">Thủ công</span>
+                          <span class="tag">Tôn giáo</span>
+                          <span class="tag blue">Truyền thống</span>
+                        </div>
+                        <p class="desc">
+                          Làng nghề chuyên sản xuất đồ đồng truyền thống phục vụ cung đình
+                          xưa và nhu cầu tâm linh, điển hình là chuông chùa và tượng thờ.
+                        </p>
+                      </div>
+                    </a>
+                    
+                  </div>
+      
+                  
+                </div>
+          
+                <div class="flex items-center justify-center space-x-[20px]">
+                  <div class="swiper-button-prev-special flex items-center justify-center aspect-[1] w-[48px] rounded-full bg-white shadow-[0px_0px_10px_#161B1D0A] fill-violet duration-500 hover:bg-violet hover:fill-white" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-010fe8282535de223">
+                    <svg width="13" height="18" viewBox="0 0 13 18" fill="inherit" xmlns="http://www.w3.org/2000/svg" class="mr-[4px]">
+                      <path d="M1.07544 10.4282C0.121634 9.74878 0.121636 8.25133 1.07544 7.57195L10.3425 0.971202C11.4101 0.21079 12.8401 1.02845 12.8401 2.39931L12.8401 15.6008C12.8401 16.9717 11.4101 17.7893 10.3425 17.0289L1.07544 10.4282Z"></path>
+                    </svg>
+                  </div>
+                  <div class="swiper-pagination-special !w-fit flex items-center justify-center swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 9"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 10"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 11"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 12"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 13"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 14"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 15"></span></div>
+                  <div class="swiper-button-next-special rotate-180 flex items-center justify-center aspect-[1] w-[48px] rounded-full bg-white shadow-[0px_0px_10px_#161B1D0A] fill-violet duration-500 hover:bg-violet hover:fill-white" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-010fe8282535de223">
+                    <svg width="13" height="18" viewBox="0 0 13 18" fill="inherit" xmlns="http://www.w3.org/2000/svg" class="mr-[4px]">
+                      <path d="M1.07544 10.4282C0.121634 9.74878 0.121636 8.25133 1.07544 7.57195L10.3425 0.971202C11.4101 0.21079 12.8401 1.02845 12.8401 2.39931L12.8401 15.6008C12.8401 16.9717 11.4101 17.7893 10.3425 17.0289L1.07544 10.4282Z"></path>
+                    </svg>
+                  </div>
+                </div>
+              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            </div>
+          </div>
+           <script src="./static/vendors/hidden.js"></script>
+            <script>
+      
+            var swiperSpecialOffer = new Swiper(".js-swiperSpecialOffer", {
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 1,
+            effect: "coverflow",
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 350,
+              depth: 150,
+              modifier: 1,
+              slideShadows: false,
+            },
+            pagination: {
+              el: ".js-swiperSpecialOffer .swiper-pagination-special",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".js-swiperSpecialOffer .swiper-button-next-special",
+              prevEl: ".js-swiperSpecialOffer .swiper-button-prev-special",
+            },
+            breakpoints: {
+              1023: {
+                slidesPerView: 1,
+                effect: "coverflow",
+                centeredSlides: true,
+                coverflowEffect: {
+                  rotate: 0,
+                  stretch: 350,
+                  depth: 150,
+                  modifier: 1,
+                  slideShadows: false,
+                },
+              },
+              999: {
+                slidesPerView: "auto",
+                effect: "coverflow",
+                coverflowEffect: {
+                  rotate: 0,
+                  stretch: 200,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: false,
+                },
+              }
+            },
+            on: {
+              init: function () {
+                setTimeout(() => {
+                  document.querySelectorAll('.swiper-slide .details').forEach(el => {
+                    el.classList.add('hidden');
+                  });
+    
+                  ['.swiper-slide-active', '.swiper-slide-prev', '.swiper-slide-next'].forEach(selector => {
+                    const el = document.querySelector(`${selector} .details`);
+                    if (el) el.classList.remove('hidden');
+                  });
+                }, 0);
+              },
+              slideChangeTransitionEnd: () => {
+                document.querySelectorAll('.swiper-slide .details').forEach(el => {
+                  el.classList.add('hidden');
+                });
+    
+                ['.swiper-slide-active', '.swiper-slide-prev', '.swiper-slide-next'].forEach(selector => {
+                  const el = document.querySelector(`${selector} .details`);
+                  if (el) el.classList.remove('hidden');
+                });
+              }
+            }
+          });
+    
+            </script>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/gt.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+   
+  </body>
 </html>

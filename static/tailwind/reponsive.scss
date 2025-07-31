@@ -1,0 +1,630 @@
+
+
+
+@media only screen and (max-width: 1299.98px) {
+    .hamburger {
+        display: flex;
+        top: -15px;
+        right: 20px;
+    }
+
+    .listMenu {
+        display: none;
+    }
+    .lang .flag {
+        padding: 0 12px 0 0;
+        align-items: center;
+        color: #fff;
+    }
+    .listOffer {
+        padding: 5px 10px;
+        font-size: 12px;
+        p {
+            line-clamp: 1;
+        }
+    }
+    .logo {
+        align-items: start;
+    }
+    
+    .stickyNav .listMenu .item {
+        line-height: 2;
+        font-size: 2vw;
+        text-transform: capitalize;
+    }
+    .sloganTop {
+        width: 120px;
+    }
+
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .tabBooking {
+        font-size: 12px;
+        flex-direction: column;
+    }
+
+    .detailOptionSelect {
+        justify-content: space-between;
+    }
+
+    .detailOptionSelect p {
+        min-width: 40%;
+    }
+
+    .formBooking .formOther .cusInput {
+        padding-left: 0;
+    }
+
+    .formSearchFlight .note,
+    .formBooking .departureDate .note {
+        left: 0;
+    }
+    .formOther {
+        gap: 10px;
+    }
+    .formBooking .text {
+        padding-right: 0;
+    }
+    .dealPrice {
+        font-size: 18px;
+    }
+    .listSelect {
+        gap: 10px;
+        .boxSelect {
+            flex: none;
+            width: 32%;
+            &.advancedFilter {
+                width: 100%;
+                flex: 1 1 100%;
+            }
+        }
+    }
+    .stickyNav .listMenu .item {
+        line-height: 2.2;
+        font-size: 2.2vw;
+        color: #fff;
+        font-weight: 500;
+    }
+    .Btn.round {
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 14px;
+    }
+    .dealStart {
+        font-weight: 400;
+    }
+    .title {
+        font-size: 3vw;
+    }
+    #mainContainerTravel .itemCard  h2 {
+        font-size: 2vw;
+    }
+    #otherContainer .itemCard  h2 {
+        font-size: 1.4vw;
+    }
+    .home-subscribe .cusContainer {
+        padding: 0 30px;
+    }
+    .tabBooking {
+        flex-flow: column;
+        gap: 5px;
+
+        span {
+            font-size: 1vw;
+            line-height: 1.5;
+        }
+    }
+    
+    .active-container .active-form {
+        border-radius: 0;
+    }
+    #page-charter .optionsSelect {
+        left: 0;
+        width: calc(100% + 70px);
+    }
+    .bookingSectionTravel,
+    .bookingSection {
+        min-height: 400px;
+    }
+    .bookingSectionTravel {
+        min-height: 560px;
+        #imagePreview  {
+            height: 560px;
+        }
+    }
+    .contentEditor {
+        .title {
+            font-size: 30px;
+        }
+    }
+    .styleOverride {
+        .managementTeam {
+            color: #3b0764;
+            h3, h2 {
+                text-align: center;
+                span {
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .listOffer {
+        width: 60vw;
+    }
+    .topBar .logo {
+        //top: 10%;
+    }
+    .hamburger {
+        right: 10px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .iconSearch {
+        width: 20px;
+    }
+
+    .topBar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 99999;
+    }
+    .stickyNav {
+        margin: 0;
+        align-items: center;
+        padding: 10px;
+        .active {
+
+         }
+    }
+    
+    .hamburger {
+        top: auto;
+        right: 10px;
+    }
+    .tabBookingWrap {
+        gap: 4px;
+    }
+    .lang {
+        margin-left: 0;
+        border-left: none;
+    }
+    .logo img {
+        width: auto;
+    }
+    .listOffer {
+        width: 60vw;
+    }
+    .listSelect {
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            right: 0;
+        }
+    }
+    .logoFooter {
+        margin: 0 auto;
+        height: 40px;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .optionsSelect {
+        width: 100%;
+        left: 0;
+        border-radius: 25px;
+    }
+    #page-charter .optionsSelect {
+        left: 0;
+        width: calc(100% + 10px);
+    }
+    .tabBookingWrap {
+        justify-content: space-between;
+    }
+
+    .tabBooking {
+        flex: content;
+    }
+
+    .tabBooking span {
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .totalPassengers {
+        padding-left: 0;
+    }
+    .listSelect {
+        flex-wrap: wrap;
+        .boxSelect {
+            flex: none;
+            width: 33%;
+            &.advancedFilter {
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+    .title {
+        font-size: 4.5vw;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        font-size: 14px;
+    }
+    .listSelect .boxSelect .select2-container {
+        max-width: 90%;
+        min-width: unset;
+    }
+    .bookingSection .container{
+        margin-top: 50px;
+    }
+    .active-container .active-form {
+        padding: 50px 10px;
+        border-radius: 0;
+        margin-top: 0;
+    }
+    #closeFormBooking {
+        top: 10px;
+    }
+    .formFlight .fromTo {
+        flex:unset;
+    }
+    .listOffer {
+        .itemOffer {
+            width: 50%;
+        }
+    }
+
+    #myFormFlightStatus .contain,
+    #myFormFlight .contain {
+        flex-wrap: wrap;
+
+        .fromTo {
+            flex: 1 1 100%;
+        }
+    }
+    .notiCopy {
+        //position: fixed;
+        //top: 61px;
+        //z-index: 99;
+    }
+
+    .story-info {
+      
+    }
+    #otherContainer .itemCard h2 {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 797.98px) {
+    // #page-contact .optionsSelect,
+    // #term-conditions-page .optionsSelect,
+    // #routes-schedules-page .optionsSelect {
+    //     //width: calc(100% );
+    // }
+    #mainContainerTravel .itemCard h2 {
+        font-size: 18px;
+    }
+    .listOffer {
+        width: 70vw;
+    }
+    .formBooking {
+        min-height: 272px;
+    }
+    .notiCopy {
+        text-align: left;
+        line-height: 1.2;
+        padding: 5px 10px;
+    }
+    .formOther {
+        flex-wrap: wrap;
+    }
+
+    .formBooking .formFlight .contain {
+        flex-wrap: wrap;
+    }
+    
+    .formSearchFlight .formOther {
+        flex-wrap: wrap;
+    }
+
+    #return-date .note {
+        left: 10px;
+    }
+
+    .formBaggage {
+        padding: 25px 10%;
+    }
+    .listCat {
+        flex-wrap: wrap;
+        .category-btn {
+            padding-top: 0;
+        }
+    }
+    .active-container .itemPassengers .optionsSelectActive {
+        bottom: 100%;
+    }
+    .stickyNav .listMenu .item {
+        font-size: 3.5vw;
+    }
+    
+    .swiper-pagination-story-highlight {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 697.98px) {
+    .formFlight .fromTo {
+        flex: none;
+    }
+    .listSelect .boxSelect {
+        width: 100%;
+    }
+    .logo {
+        margin-top: 0; 
+    }
+    .notiCopy .copy {
+        flex-flow: column;
+        line-height: 1.2;
+        p {
+            padding: 0;
+        }
+        span {
+            line-height: 1;
+        }
+    }
+    .listOffer {
+        width: 100%;
+    }
+    #otherContainer .itemCard h2 {
+        font-size: 16px;
+    }
+    #mainContainerTravel .itemCard h2 {
+        font-size: 16px;
+    }
+    .listOffer p  {
+        font-size: 14px;    
+    }
+    
+}
+
+
+@media only screen and (max-width: 575.98px) {
+    .inputSearchNavMb input {
+        display: none;
+    }
+    .inputSearchNavMb.active {
+        width: auto;
+        input {
+            position: absolute;
+            width: 100vw;
+            top: 100%;
+            background: #fff;
+            left: 0;
+            padding: 10px 20px;
+            max-width: unset;
+            display: block;
+            color: #333;
+        }
+      }
+      
+    .listOffer {
+        .itemOffer {
+            width: 100%;
+        }
+    }
+    .title {
+        font-size: 5vw;
+    }
+    .formBooking .formFlight .contain .Btn {
+        margin: auto;
+    }
+    .hamburger {
+        //top: 24px;
+    }
+    .listSelect {
+        flex-wrap: wrap;
+        .boxSelect {
+            width:100%;
+            label {
+                display: none;
+            }
+            &.advancedFilter {
+                width: 100%;
+                margin: auto;
+                
+            }
+            .select2-container--default .select2-selection--single .select2-selection__arrow {
+                right: 0;
+            }
+        }
+        .boxSelect .select2-container {
+            max-width: unset;
+            width: 100% !important;
+        }
+    }
+    .lang {
+        padding: 0 10px;
+        align-items: center;
+    }
+
+    .lang .select {
+        right: -35px;
+    }
+
+    .stickyNav.active {
+        //height: 100dvh;
+        //align-items: start;
+    }
+    .topBar .logo {
+        left: 10px;
+        height: 30px;
+        top: 15%;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        img {
+        }
+    }
+    .notiCopy {
+        padding: 5px 30px 5px 10px;
+        font-size: 12px;
+    }
+    .stickyNav {
+        padding: 15px 0;
+    }
+    .stickyNav .listMenu .item {
+        line-height: 3;
+        font-size: 4vw;
+        color: white;
+        font-weight: 500;
+    }
+    .notiCopy {
+        //top: 72px;
+    }
+
+    .fromTo {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-bottom: 0;
+    }
+
+    .formSearchFlight .iconFly {
+        display: none;
+    }
+
+    #selectFromStatus .select2-container--default .select2-selection--single,
+    #selectFromSearch .select2-container--default .select2-selection--single,
+    #selectToStatus .select2-container--default .select2-selection--single,
+    #selectToSearch .select2-container--default .select2-selection--single {
+        border-radius: 8px;
+    }
+
+    .formBooking .fromTo .note {
+        left: 20px;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        padding-left: 20px;
+    }
+
+    .formBooking .contain {
+        gap: 10px;
+    }
+
+    .formBaggage {
+        padding: 25px 0;
+    }
+
+    .formFlight {
+        .item.itemCalendar {
+            width: 100%;
+        }
+    }
+
+    .formFlight .fromTo {
+        flex-wrap: wrap;
+    }
+
+    .tabBooking span {
+        font-size: 1.5vw;
+        line-height: 1.5;
+    }
+
+
+    .Btn {
+        font-size: 14px;
+    }
+
+    .formBooking .text {
+        font-size: 12px;
+    }
+
+    .formBooking {
+
+        .formManage,
+        .formBaggage,
+        .formCheckIn {
+            .contain {
+                flex-wrap: wrap;
+
+                .item {
+                    width: 100%;
+                    flex: none;
+                }
+            }
+        }
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered,
+    .totalPassengers,
+    .formBooking .cusInput {
+        font-size: 3.2vw;
+    }
+
+    .footer .links .group {
+        width: 50%;
+    }
+    .contentEditor {
+        .title {
+            font-size: 30px;
+        }
+    }
+    .styleOverride {
+        .managementTeam {
+            color: #3b0764;
+            h3, h2 {
+                text-align: center;
+                span {
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    
+
+    #selectToStatus .select2-container--default .select2-selection--single, #selectToFlight .select2-container--default .select2-selection--single, #selectToSearch .select2-container--default .select2-selection--single,
+    #selectFromStatus .select2-container--default .select2-selection--single, #selectfromFlight .select2-container--default .select2-selection--single, #selectFromSearch .select2-container--default .select2-selection--single {
+        border-radius: 8px;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        padding-top: 15px;
+    }
+    .formOther .itemCalendar::after,
+    .itemCalendar::after {
+        width: 15px;
+        height: 15px;
+    }
+    .breadcrumb {
+        flex-wrap: wrap;
+        gap: 5px;;
+    }
+    #cargoForm {
+        .cusContainer {
+            padding: 0;
+        }
+    }
+    .flight-booking {
+        padding: 10px 5px;
+    }
+    .flight-booking p {
+        font-size: 10px;
+    }
+    .formBooking .item {
+        min-height: 50px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 375.98px) {
+    .formSearchFlight .copy {
+        gap: 10px;
+    }
+}
