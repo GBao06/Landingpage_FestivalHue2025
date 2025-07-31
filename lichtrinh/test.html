@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ts.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="schedule-container">
+      <h2 class="title-schedule">Lịch trình sự kiện</h2>
+      <ul class="tabs">
+        <li class="active" data-id="0">
+          <ion-icon name="calendar-clear-outline"></ion-icon>
+          Lễ Khai Mạc
+        </li>
+        <li data-id="1">
+          <ion-icon name="walk-outline"></ion-icon>
+          Diễu Hành
+        </li>
+        <li data-id="2">
+          <ion-icon name="musical-notes-outline"></ion-icon>
+          Buổi Nghệ Thuật
+        </li>
+        <li data-id="3">
+          <ion-icon name="moon-outline"></ion-icon>
+          Đêm Nhã Nhạc
+        </li>
+        <li data-id="4">
+          <ion-icon name="images-outline"></ion-icon>
+          Triển Lãm
+        </li>
+      </ul>
+
+      <div class="contents">
+        <div class="box show" data-content="0">
+          <img src="khaimac.jpg" alt="" />
+          <div class="des-box">
+            <h3>Lễ khai mạc Festival Huế</h3>
+            <p class="time">
+              <ion-icon name="time-outline" class="icon"></ion-icon
+              ><strong>Thời gian:</strong> 20/06/2025, 19:00
+            </p>
+            <p class="add">
+              <ion-icon name="location-outline" class="icon"></ion-icon
+              ><strong>Địa điểm:</strong> Quảng trường Ngọ Môn
+            </p>
+            <p class="des">
+              <ion-icon name="document-text-outline" class="icon"></ion-icon>
+              Chương trình khai mạc hoành tráng với màn pháo hoa và nghệ thuật
+              ánh sáng.
+            </p>
+          </div>
+        </div>
+
+        <div class="box hide" data-content="1">
+          <img src="lhduongpho.jpg" alt="" />
+
+          <div class="des-box">
+            <h3>Diễu Hành Đường Phố</h3>
+            <p class="time">
+              <ion-icon name="time-outline" class="icon"></ion-icon
+              ><strong>Thời gian:</strong> 21/06/2025, 08:00
+            </p>
+            <p class="add">
+              <ion-icon name="location-outline" class="icon"></ion-icon
+              ><strong>Địa điểm:</strong> Đường Trần Hưng Đạo
+            </p>
+            <p class="des">
+              <ion-icon name="document-text-outline" class="icon"></ion-icon>
+              Diễu hành văn hóa với nhiều đoàn nghệ thuật trong nước và quốc tế.
+            </p>
+          </div>
+        </div>
+        <div class="box hide" data-content="2">
+          <img src="muaroinuoc.jpg" alt="" />
+          <div class="des-box">
+            <h3>Biểu Diễn Nghệ Thuật Truyền Thống</h3>
+            <p class="time">
+              <ion-icon name="time-outline" class="icon"></ion-icon
+              ><strong>Thời gian:</strong> 22/06/2025, 17:00
+            </p>
+            <p class="add">
+              <ion-icon name="location-outline" class="icon"></ion-icon
+              ><strong>Địa điểm:</strong> Nhà hát Duyệt Thị Đường
+            </p>
+            <p class="des">
+              <ion-icon name="document-text-outline" class="icon"></ion-icon>
+              Biểu diễn nhã nhạc cung đình và múa rối nước đặc sắc.
+            </p>
+          </div>
+        </div>
+
+        <div class="box hide" data-content="3">
+          <img src="nhanhac.jpg" alt="" />
+          <div class="des-box">
+            <h3>Đêm Nhã Nhạc Cung Đình</h3>
+            <p class="time">
+              <ion-icon name="time-outline" class="icon"></ion-icon
+              ><strong>Thời gian:</strong> 23/06/2025, 20:00
+            </p>
+            <p class="add">
+              <ion-icon name="location-outline" class="icon"></ion-icon
+              ><strong>Địa điểm:</strong> Điện Thái Hòa
+            </p>
+            <p class="des">
+              <ion-icon name="document-text-outline" class="icon"></ion-icon>
+              Trình diễn nhã nhạc cung đình Huế dưới ánh nến, đưa khán giả hồi
+              tưởng vẻ đẹp triều Nguyễn.
+            </p>
+          </div>
+        </div>
+
+        <div class="box hide" data-content="4">
+          <img src="hue-xua.jpg" alt="" />
+          <div class="des-box">
+            <h3>Triển Lãm “Huế Xưa & Nay”</h3>
+            <p class="time">
+              <ion-icon name="time-outline" class="icon"></ion-icon>
+              <strong>Thời gian:</strong> 24–29/06/2025, 09:00–21:00
+            </p>
+            <p class="add">
+              <ion-icon name="location-outline" class="icon"></ion-icon>
+              <strong>Địa điểm:</strong> Bảo tàng Mỹ thuật Cung Đình Huế
+            </p>
+            <p class="des">
+              <ion-icon name="document-text-outline" class="icon"></ion-icon>
+              Bộ sưu tập ảnh, hiện vật, tư liệu tái hiện Huế ngày xưa và những
+              đổi thay hôm nay.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="tet.js"></script>
+  </body>
+</html>
