@@ -52,11 +52,11 @@ ul {
   align-items: center;
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   overflow: hidden;
-  border-radius: 10px;
+  /* border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  -o-border-radius: 10px; */
 }
 
 .tabs li {
@@ -85,16 +85,16 @@ ul {
   color: #f9004d;
   position: relative;
   z-index: 1;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .active {
   background: linear-gradient(145deg, #1e2024, #23272b);
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-  color: #f9004d !important;
+  color: #e8b44d !important;
   position: relative;
   z-index: 1;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .contents {
@@ -239,7 +239,7 @@ ul {
     align-items: center; /* Căn giữa theo chiều ngang */
     font-size: 16px;
     width: 100%;
-    border-radius: 6px;
+    /* border-radius: 6px; */
     padding: 8px; /* Thêm chút đệm để nội dung không bị sát viền */
     text-align: center; /* Đảm bảo chữ cũng được căn giữa */
   }
@@ -248,7 +248,7 @@ ul {
   .tabs li.active {
     background: #2a2d31; /* Đổi nền để làm nổi bật */
     box-shadow: none; /* Bỏ hiệu ứng đổ bóng */
-    border-radius: 0 6px 6px 0; /* Bo góc cho phù hợp */
+    /* border-radius: 0 6px 6px 0; Bo góc cho phù hợp */
   }
 
   /* 3. Cấu hình cột CONTENTS bên phải */
@@ -258,6 +258,7 @@ ul {
     width: auto;
     height: 80vh;
     align-self: flex-end;
+    justify-content: center;
     /* overflow-y: auto; */
   }
 
@@ -317,9 +318,12 @@ ul {
   .tabs,
   .contents {
     flex: none; /* Bỏ các quy tắc flex của layout 2 cột */
+    justify-content: center;
     width: 100%;
     max-width: none;
-    margin-bottom: 20px;
+    margin: 20px auto;
+    height: 400px;
+    /* margin-bottom: 20px; */
   }
 
   /* 3. Chuyển thanh tabs về dạng hàng ngang */
@@ -341,5 +345,11 @@ ul {
     border-bottom: 3px solid #f9004d; /* Thay bằng đường kẻ dưới */
     border-radius: 0; /* Bỏ bo góc */
     background: transparent; /* Bỏ nền để đỡ rối */
+  }
+  .des-box h3{
+    font-size: 14px;
+  }
+  .des-box p{
+    font-size: 12px;
   }
 }
