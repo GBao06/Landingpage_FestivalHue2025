@@ -7,9 +7,15 @@ input[type=number]::-webkit-outer-spin-button {
 /* body{
   pointer-events: none;
 } */
-
+/* .bg1{
+  background-image: url(/assets/images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
 .sectionSpecialOffer{
   margin-top: 30px;
+
 }
 .sectionSpecialOffer h2{
   color:#e8b44d;
