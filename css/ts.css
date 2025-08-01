@@ -344,7 +344,7 @@ ul {
     border-left: none; /* Bỏ đường kẻ trái */
     border-bottom: 3px solid #f9004d; /* Thay bằng đường kẻ dưới */
     border-radius: 0; /* Bỏ bo góc */
-    background: transparent; /* Bỏ nền để đỡ rối */
+    /* background: transparent; Bỏ nền để đỡ rối */
   }
   .des-box h3{
     font-size: 14px;
