@@ -13,6 +13,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script src="./static/vendors/swiper.js"></script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -24,8 +32,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="./css/gioithieu.css" />
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/ts.css">
   </head>
   <body>
     <!-- Header -->
@@ -39,7 +49,7 @@
             <a href="#gioithieu" class="menu-link" data-slide="0">Giới thiệu</a>
           </li>
           <li>
-            <a href="#langnghe" class="menu-link" data-slide="1">Làng nghề</a>
+            <a href="#bg1-home-page" class="menu-link" data-slide="1">Làng nghề</a>
           </li>
           <li>
             <a href="#amthuc" class="menu-link" data-slide="2">Ẩm thực</a>
@@ -60,25 +70,24 @@
         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
       </button>
     </header>
-
-    <section class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="content-gt" data-content="one">
-            <h1>Festival Huế 2025 – Rực rỡ sắc màu văn hóa</h1>
-            <p>
-              <strong>Festival Huế</strong> là lễ hội văn hóa – nghệ thuật quốc
-              tế tổ chức định kỳ tại Huế, nhằm tôn vinh di sản văn hóa cố đô,
-              quảng bá hình ảnh đất nước và thúc đẩy du lịch. Sự kiện quy tụ
-              nhiều hoạt động đặc sắc như lễ hội đường phố, trình diễn áo dài và
-              các màn trình diễn nghệ thuật truyền thống lẫn hiện đại từ nhiều
-              quốc gia.
-            </p>
-          </div>
-          <div class="background" data-item="one"></div>
-        </div>
-        <!-- Craft-village -->
-        <div id="bg1-home-page" class="swiper-slide bg1">
+    <!-- Trang chủ -->
+    <div class="trangchu blur-fade-in scale-fade-in" id="trangchu">
+      <div class="content-gt" data-content="one">
+        <h1>Festival Huế 2025 – Rực rỡ sắc màu văn hóa</h1>
+        <p>
+          <strong>Festival Huế</strong> là lễ hội văn hóa – nghệ thuật quốc
+          tế tổ chức định kỳ tại Huế, nhằm tôn vinh di sản văn hóa cố đô,
+          quảng bá hình ảnh đất nước và thúc đẩy du lịch. Sự kiện quy tụ
+          nhiều hoạt động đặc sắc như lễ hội đường phố, trình diễn áo dài và
+          các màn trình diễn nghệ thuật truyền thống lẫn hiện đại từ nhiều
+          quốc gia.
+        </p>      
+      
+      </div>
+      <div class="background" data-item="one"></div>
+    </div>
+    <!-- Craft-village -->
+    <div id="bg1-home-page" class="swiper-slide bg1">
           <div class="sectionSpecialOffer cusContainer py-[65px]">
             <div class="heading mb-[30px]">
               <div class="flex gap-[24px] justify-center items-center mb-[16px] w-full">
@@ -125,7 +134,7 @@
                   </div>
                 <div class="swiper-slide w-full mb:px-[8px] group swiper-slide-next" role="group" aria-label="2 / 6" data-swiper-slide-index="1" style="transition-duration: 0ms; transform: translate3d(-350px, 0px, -150px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 0; width: 492px;">
                     <div class="itemHighlight relative overflow-hidden">
-                      <img src="/assets/images/Cau-trang-tien-1.jpg" alt="" class="absolute top-0 left-0 w-full h-[51%] blur-sm">
+                      <img src="./assets/images/Cau-trang-tien-1.jpg" alt="" class="absolute top-0 left-0 w-full h-[51%] blur-sm">
               
                       <div class="content relative aspect-[835/470] w-full z-10 p-[30px] space-y-[16px] flex flex-col items-center justify-center">
                         <div class="image overflow-hidden w-[75%] mx-auto aspect-[2/1] rounded-[16px]">
@@ -141,7 +150,7 @@
                   </div>
                 <div class="swiper-slide w-full mb:px-[8px] group" role="group" aria-label="3 / 6" data-swiper-slide-index="2" style="transition-duration: 0ms; transform: translate3d(-700px, 0px, -300px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -1; width: 492px;">
                     <div class="itemHighlight relative overflow-hidden">
-                      <img src="/assets/images/Cau-trang-tien-1.jpg" alt="" class="absolute top-0 left-0 w-full h-[51%] blur-sm">
+                      <img src="./assets/images/Cau-trang-tien-1.jpg" alt="" class="absolute top-0 left-0 w-full h-[51%] blur-sm">
                
                       <div class="content relative aspect-[835/470] w-full z-10 p-[30px] space-y-[16px] flex flex-col items-center justify-center">
                         <div class="image overflow-hidden w-[75%] mx-auto aspect-[2/1] rounded-[16px]">
@@ -157,7 +166,7 @@
                   </div>
                 <div class="swiper-slide w-full mb:px-[8px] group" role="group" aria-label="4 / 6" data-swiper-slide-index="3" style="transition-duration: 0ms; transform: translate3d(-1050px, 0px, -450px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -2; width: 492px;">
                     <div class="itemHighlight relative overflow-hidden">
-                      <img src="/assets/images/Cau-trang-tien-1.jpg" alt="" class="absolute top-0 left-0 w-full h-[51%] blur-sm">
+                      <img src="./assets/images/Cau-trang-tien-1.jpg" alt="" class="absolute top-0 left-0 w-full h-[51%] blur-sm">
                  
                       <div class="content relative aspect-[835/470] w-full z-10 p-[30px] space-y-[16px] flex flex-col items-center justify-center">
                         <div class="image overflow-hidden w-[75%] mx-auto aspect-[2/1] rounded-[16px]">
@@ -173,7 +182,7 @@
                   </div>
                 <div class="swiper-slide w-full mb:px-[8px] group" role="group" aria-label="5 / 6" data-swiper-slide-index="4" style="transition-duration: 0ms; transform: translate3d(-1400px, 0px, -600px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -3; width: 492px;">
                     <div class="itemHighlight relative overflow-hidden">
-                      <img src="/assets/images/Cau-trang-tien-1.jpg" alt="" class="absolute top-0 left-0 w-full h-[51%] blur-sm">
+                      <img src="./assets/images/Cau-trang-tien-1.jpg" alt="" class="absolute top-0 left-0 w-full h-[51%] blur-sm">
                  
                       <div class="content relative aspect-[835/470] w-full z-10 p-[30px] space-y-[16px] flex flex-col items-center justify-center">
                         <div class="image overflow-hidden w-[75%] mx-auto aspect-[2/1] rounded-[16px]">
@@ -253,20 +262,143 @@
               },
             });
           </script>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </section>
+    </div>
+    <!-- Nghệ thuật -->
+
+    <!-- Lịch trình -->
+
+    <div class="schedule-container" id="lichtrinh">
+            <h2 class="title-schedule" style="margin-top: 50px;">Lịch trình sự kiện</h2>
+            <ul class="tabs">
+              <li class="active" data-id="0">
+                <ion-icon name="calendar-clear-outline"></ion-icon>
+                Lễ Khai Mạc
+              </li>
+              <li data-id="1">
+                <ion-icon name="walk-outline"></ion-icon>
+                Diễu Hành
+              </li>
+              <li data-id="2">
+                <ion-icon name="musical-notes-outline"></ion-icon>
+                Buổi Nghệ Thuật
+              </li>
+              <li data-id="3">
+                <ion-icon name="moon-outline"></ion-icon>
+                Đêm Nhã Nhạc
+              </li>
+              <li data-id="4">
+                <ion-icon name="images-outline"></ion-icon>
+                Triển Lãm
+              </li>
+            </ul>
+      
+            <div class="contents">
+              <div class="box show" data-content="0">
+                <img src="./assets/images/lichtrinh/khaimac.jpg" alt="" />
+                <div class="des-box">
+                  <h3>Lễ khai mạc Festival Huế</h3>
+                  <p class="time">
+                    <ion-icon name="time-outline" class="icon"></ion-icon
+                    ><strong>Thời gian:</strong> 20/06/2025, 19:00
+                  </p>
+                  <p class="add">
+                    <ion-icon name="location-outline" class="icon"></ion-icon
+                    ><strong>Địa điểm:</strong> Quảng trường Ngọ Môn
+                  </p>
+                  <p class="des">
+                    <ion-icon name="document-text-outline" class="icon"></ion-icon>
+                    Chương trình khai mạc hoành tráng với màn pháo hoa và nghệ thuật
+                    ánh sáng.
+                  </p>
+                </div>
+              </div>
+      
+              <div class="box hide" data-content="1">
+                <img src="./assets/images/lichtrinh/lhduongpho.jpg" alt="" />
+      
+                <div class="des-box">
+                  <h3>Diễu Hành Đường Phố</h3>
+                  <p class="time">
+                    <ion-icon name="time-outline" class="icon"></ion-icon
+                    ><strong>Thời gian:</strong> 21/06/2025, 08:00
+                  </p>
+                  <p class="add">
+                    <ion-icon name="location-outline" class="icon"></ion-icon
+                    ><strong>Địa điểm:</strong> Đường Trần Hưng Đạo
+                  </p>
+                  <p class="des">
+                    <ion-icon name="document-text-outline" class="icon"></ion-icon>
+                    Diễu hành văn hóa với nhiều đoàn nghệ thuật trong nước và quốc tế.
+                  </p>
+                </div>
+              </div>
+              <div class="box hide" data-content="2">
+                <img src="./assets/images/lichtrinh/muaroinuoc.jpg" alt="" />
+                <div class="des-box">
+                  <h3>Biểu Diễn Nghệ Thuật Truyền Thống</h3>
+                  <p class="time">
+                    <ion-icon name="time-outline" class="icon"></ion-icon
+                    ><strong>Thời gian:</strong> 22/06/2025, 17:00
+                  </p>
+                  <p class="add">
+                    <ion-icon name="location-outline" class="icon"></ion-icon
+                    ><strong>Địa điểm:</strong> Nhà hát Duyệt Thị Đường
+                  </p>
+                  <p class="des">
+                    <ion-icon name="document-text-outline" class="icon"></ion-icon>
+                    Biểu diễn nhã nhạc cung đình và múa rối nước đặc sắc.
+                  </p>
+                </div>
+              </div>
+      
+              <div class="box hide" data-content="3">
+                <img src="./assets/images/lichtrinh/nhanhac.jpg" alt="" />
+                <div class="des-box">
+                  <h3>Đêm Nhã Nhạc Cung Đình</h3>
+                  <p class="time">
+                    <ion-icon name="time-outline" class="icon"></ion-icon
+                    ><strong>Thời gian:</strong> 23/06/2025, 20:00
+                  </p>
+                  <p class="add">
+                    <ion-icon name="location-outline" class="icon"></ion-icon
+                    ><strong>Địa điểm:</strong> Điện Thái Hòa
+                  </p>
+                  <p class="des">
+                    <ion-icon name="document-text-outline" class="icon"></ion-icon>
+                    Trình diễn nhã nhạc cung đình Huế dưới ánh nến, đưa khán giả hồi
+                    tưởng vẻ đẹp triều Nguyễn.
+                  </p>
+                </div>
+              </div>
+      
+              <div class="box hide" data-content="4">
+                <img src="./assets/images/lichtrinh/hue-xua.jpg" alt="" />
+                <div class="des-box">
+                  <h3>Triển Lãm “Huế Xưa & Nay”</h3>
+                  <p class="time">
+                    <ion-icon name="time-outline" class="icon"></ion-icon>
+                    <strong>Thời gian:</strong> 24–29/06/2025, 09:00–21:00
+                  </p>
+                  <p class="add">
+                    <ion-icon name="location-outline" class="icon"></ion-icon>
+                    <strong>Địa điểm:</strong> Bảo tàng Mỹ thuật Cung Đình Huế
+                  </p>
+                  <p class="des">
+                    <ion-icon name="document-text-outline" class="icon"></ion-icon>
+                    Bộ sưu tập ảnh, hiện vật, tư liệu tái hiện Huế ngày xưa và những
+                    đổi thay hôm nay.
+                  </p>
+                </div>
+              </div>
+            </div>
+    </div>  
+    <script src="./js/tet.js"></script>
+
+ 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/gt.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
    
   </body>
 </html>
