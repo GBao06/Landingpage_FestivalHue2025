@@ -14,7 +14,7 @@ body {
   background: linear-gradient(145deg, #55566a 0%, #131318 76%);
 }
 
-art-section {
+.nghethuat {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -196,7 +196,7 @@ art-section {
 }
 
 @media (max-width: 950px) {
-  art-section {
+  .nghethuat {
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 3fr;
     grid-template-areas:
@@ -218,7 +218,7 @@ art-section {
 }
 
 @media (max-width: 650px) {
-  art-section {
+  .nghethuat {
     grid-template-rows: 1fr 1fr;
   }
 
