@@ -68,6 +68,41 @@ html {
   transition: width 0.4s ease;
 }
 
+.menu-link.active {
+  background: linear-gradient(
+    90deg,
+    #b19cd9 0%,
+    /* tím lavender Huế */ #8e44ad 50%,
+    /* tím đậm */ #5d3fd3 100% /* deep purple */
+  ); /* màu nền giống Home */
+  padding: 0.6rem 1.6rem; /* giống kích thước nút Home */
+  border-radius: 50vh; /* bo tròn */
+  border: none; /* viền cùng màu nền */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Animation phát sáng */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(93, 63, 211, 0.8),
+      0 0 20px rgba(177, 156, 217, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(93, 63, 211, 1), 0 0 40px rgba(177, 156, 217, 1);
+  }
+}
+
+.menu-link.active:hover {
+  color: #fff; /* Giữ nguyên màu chữ */
+  box-shadow: 0 0 10px rgba(93, 63, 211, 0.8), 0 0 20px rgba(177, 156, 217, 0.8);
+  animation: glowPulse 3s infinite alternate;
+}
+
+.menu-link.active::after {
+  display: none; /* Ẩn gạch underline khi hover */
+}
+
+
 .menu-link:hover::after {
   width: 100%;
 }
