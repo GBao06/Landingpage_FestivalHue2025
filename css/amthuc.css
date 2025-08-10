@@ -276,7 +276,7 @@
   left: 0;
 }
 
-.wrapper-food-after.active {
+.wrapper-food-after.active_food {
   display: block;
   opacity: 1;
   visibility: visible;
@@ -293,7 +293,7 @@
   opacity: 1;
   transform: translateX(0);
 }
-.food-epl:active {
+.food-epl:active_food {
   transform: scale(0.95);
 }
 

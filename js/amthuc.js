@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     navItems.forEach((item) => item.classList.remove("show"));
 
-    wrapperAfter.classList.add("active");
+    wrapperAfter.classList.add("active_food");
 
     navItems.forEach((item, index) => {
       setTimeout(() => {
