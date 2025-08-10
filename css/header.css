@@ -127,3 +127,10 @@ html {
   /* Hiển thị gạch chân */
   width: 100% !important;
 }
+
+/* thêm */
+@media (max-width: 960px) {
+  .header .menu .menu-link.active_menu {
+    border-radius: 50vh; /* Hoặc giá trị bo góc bạn muốn, ví dụ: 50px */
+  }
+}

@@ -445,6 +445,23 @@
 }
 
 @media (max-width: 480px) {
+  .food-pic-circle {
+    max-width: 250px; /* increased from 180px */
+  }
+
+  .food-pic-large {
+    max-width: 200px; /* increased from 150px */
+    bottom: 15%; /* adjust position accordingly */
+    left: -30%; /* adjusted from -40% for better positioning */
+  }
+
+  .food-pic-small img {
+    display: block; /* show the small food image on mobile */
+    max-width: 150px; /* set appropriate size */
+  }
+}
+
+@media (max-width: 480px) {
   .nav-link::after {
     font-size: 1rem;
     top: 70%;
