@@ -182,7 +182,7 @@ body {
 
 /* RES 928px */
 
-@media (max-width: 58em) {
+@media (max-width: 960px) {
   .content-gt,
   .content-gt[data-content="two"],
   .content-gt[data-content="three"] {

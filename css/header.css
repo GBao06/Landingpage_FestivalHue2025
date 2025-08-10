@@ -19,6 +19,7 @@ html {
   z-index: 1000;
   top: 0;
   position: fixed;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .logo {
@@ -102,12 +103,27 @@ html {
   display: none; /* Ẩn gạch underline khi hover */
 }
 
-
-
 .menu-link:hover::after {
   width: 100%;
 }
 
 .menu-link:hover {
-  color: #5d3fd3 ; /* đồng bộ text màu tím đậm */ 
+  color: #5d3fd3; /* đồng bộ text màu tím đậm */
+}
+/* thêm */
+.header-hidden {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+/* Class mới cho trạng thái active có gạch chân */
+.menu-link-active-underline {
+  /* Đổi màu chữ giống màu hover */
+  color: #5d3fd3 !important;
+}
+
+.menu-link-active-underline::after {
+  /* Hiển thị gạch chân */
+  width: 100% !important;
 }

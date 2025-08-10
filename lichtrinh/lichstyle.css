@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Salsa:wght@300..700&family=Salsa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Salsa&display=swap");
 
 * {
   margin: 0;
@@ -11,7 +11,7 @@
   min-height: 100vh;
   padding-top: 55px;
   font-family: "Salsa", sans-serif;
-  background-image: url("/assets/images/lichtrinh/Ngo-Mon2.jpg");
+  background-image: url("Ngo-Mon2.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -50,13 +50,13 @@ ul {
   margin-top: 30px;
   display: flex;
   align-items: center;
-  /* box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e; */
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   overflow: hidden;
-  /* border-radius: 10px;
+  border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
-  -o-border-radius: 10px; */
+  -o-border-radius: 10px;
 }
 
 .tabs li {
@@ -85,23 +85,23 @@ ul {
   color: #f9004d;
   position: relative;
   z-index: 1;
-  /* border-radius: 10px; */
+  border-radius: 10px;
 }
 
 .active {
   background: linear-gradient(145deg, #1e2024, #23272b);
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-  color: #e8b44d !important;
+  color: #f9004d !important;
   position: relative;
   z-index: 1;
-  /* border-radius: 10px; */
+  border-radius: 10px;
 }
 
 .contents {
   width: 80%;
   margin: auto;
   margin-top: 50px;
-  display: flex !important;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
@@ -145,7 +145,7 @@ ul {
 
 .box h3 {
   /* color: #c4cfde; */
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 20px;
   color: #9370db;
 }
@@ -153,7 +153,7 @@ ul {
 .box p {
   color: #fff;
   opacity: 0.5;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .time {
@@ -199,7 +199,7 @@ ul {
   }
 
   .tabs li {
-    font-size: 1.4rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -239,7 +239,7 @@ ul {
     align-items: center; /* Căn giữa theo chiều ngang */
     font-size: 16px;
     width: 100%;
-    /* border-radius: 6px; */
+    border-radius: 6px;
     padding: 8px; /* Thêm chút đệm để nội dung không bị sát viền */
     text-align: center; /* Đảm bảo chữ cũng được căn giữa */
   }
@@ -248,7 +248,7 @@ ul {
   .tabs li.active {
     background: #2a2d31; /* Đổi nền để làm nổi bật */
     box-shadow: none; /* Bỏ hiệu ứng đổ bóng */
-    /* border-radius: 0 6px 6px 0; Bo góc cho phù hợp */
+    border-radius: 0 6px 6px 0; /* Bo góc cho phù hợp */
   }
 
   /* 3. Cấu hình cột CONTENTS bên phải */
@@ -258,7 +258,6 @@ ul {
     width: auto;
     height: 80vh;
     align-self: flex-end;
-    justify-content: center;
     /* overflow-y: auto; */
   }
 
@@ -275,7 +274,7 @@ ul {
   }
 
   .box h3 {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
   /* .box p {
     font-size: 1.1rem;
@@ -318,12 +317,9 @@ ul {
   .tabs,
   .contents {
     flex: none; /* Bỏ các quy tắc flex của layout 2 cột */
-    justify-content: center;
     width: 100%;
     max-width: none;
-    margin: 20px auto;
-    height: 500px;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
   }
 
   /* 3. Chuyển thanh tabs về dạng hàng ngang */
@@ -335,7 +331,7 @@ ul {
   /* 4. Tinh chỉnh lại các mục trong tab */
   .tabs li {
     padding: 5px;
-    font-size: 1rem; /* Giảm cỡ chữ cho vừa vặn */
+    font-size: 0.75rem; /* Giảm cỡ chữ cho vừa vặn */
     justify-content: center;
   }
 
@@ -344,12 +340,6 @@ ul {
     border-left: none; /* Bỏ đường kẻ trái */
     border-bottom: 3px solid #f9004d; /* Thay bằng đường kẻ dưới */
     border-radius: 0; /* Bỏ bo góc */
-    /* background: transparent; Bỏ nền để đỡ rối */
-  }
-  .des-box h3 {
-    font-size: 2rem;
-  }
-  .des-box p {
-    font-size: 1.4rem;
+    background: transparent; /* Bỏ nền để đỡ rối */
   }
 }

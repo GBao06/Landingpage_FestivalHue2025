@@ -1,6 +1,6 @@
 @charset "UTF-8";
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -13,15 +13,14 @@ input[type=number]::-webkit-outer-spin-button {
   background-position: center;
   background-repeat: no-repeat;
 } */
-.sectionSpecialOffer{
+.sectionSpecialOffer {
   margin-top: 30px;
-
 }
-.sectionSpecialOffer h2{
-  color:#e8b44d;
+.sectionSpecialOffer h2 {
+  color: #e8b44d;
   font-family: "Salsa", cursive;
 }
-.sectionSpecialOffer p{
+.sectionSpecialOffer p {
   font-family: inherit;
   font-size: 2rem;
   line-height: 1.4;
@@ -34,11 +33,10 @@ input[type=number]::-webkit-outer-spin-button {
   width: 45vw;
   margin: auto;
 }
-.relative{
+.relative {
   position: relative;
 }
-.relative img{
-
+.relative img {
   height: 360px;
 }
 .details {
@@ -55,9 +53,8 @@ input[type=number]::-webkit-outer-spin-button {
   z-index: 2;
 
   border-bottom-right-radius: 10px;
-  border-bottom-left-radius:10px ;
+  border-bottom-left-radius: 10px;
 }
-
 
 .details h1,
 .details h2 {
@@ -105,4 +102,16 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 1.5;
   margin-bottom: 1em;
   font-size: 14px;
+}
+
+/* SỬA LỖI TRÀN LAYOUT TỔNG THỂ CHO TẤT CẢ CÁC SLIDE */
+.swiper-wrapper > .swiper-slide {
+  /* 1. Tạo ngữ cảnh định vị để "giam" các phần tử con */
+  position: relative;
+
+  /* 2. Cắt bỏ mọi nội dung tràn ra ngoài slide */
+  overflow: hidden;
+
+  /* 3. Đặt màu nền mặc định để slide không bị trong suốt */
+  background-color: #131318; /* Màu nền tối giống phần nghệ thuật */
 }
