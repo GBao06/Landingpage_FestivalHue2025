@@ -141,7 +141,8 @@
   position: absolute;
   top: 15%;
   left: 40%;
-  font-family: "Salsa", cursive;
+  font-family: "Merriweather", cursive;
+  font-weight: bold;
 }
 
 .footer-banner {
