@@ -239,7 +239,7 @@
 /* Ảnh hover trong nav-item */
 .nav-item .images-wrapper {
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
@@ -392,7 +392,7 @@
   }
   .nav-link::after {
     font-size: 1.5rem;
-    top: 72%;
+    top: 75%;
     white-space: normal;
     width: 80%;
     transform: translateX(-50%);
