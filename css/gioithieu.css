@@ -43,13 +43,13 @@ body {
 }
 
 .content-gt h1 {
-  font-family: "Salsa", cursive;
+  font-family: "Merriweather", cursive;
   font-size: clamp(3.2rem, 3vw, 10.4rem);
   margin-bottom: 20px;
   opacity: 0;
   color: #e8b44d; /* Giữ màu vàng cam cho tiêu đề */
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .content-gt p {
