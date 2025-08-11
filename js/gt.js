@@ -31,8 +31,23 @@ const swiper = new Swiper(".swiper-container", {
 });
 
 // Bật-Tắt mobile nav
-const btnNavEl = document.querySelector(".btn-mobile-nav");
+const menuLinks = document.querySelectorAll(".menu-link");
 const headerEl = document.querySelector(".header");
+menuLinks.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const slideIndex = parseInt(this.getAttribute("data-slide"), 10);
+    swiper.slideToLoop(slideIndex, 800);
+
+    // THAY ĐỔI TẠI ĐÂY:
+    // Chỉ đóng menu di động nếu nhấp vào mục "Liên hệ" (có data-slide="5")
+    if (slideIndex === 5 && headerEl.classList.contains("nav-open")) {
+      headerEl.classList.remove("nav-open");
+    }
+  });
+});
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+
 btnNavEl?.addEventListener("click", () => {
   headerEl.classList.toggle("nav-open");
 });

@@ -153,9 +153,9 @@
                   >
                     <div class="itemHighlight relative overflow-hidden">
                       <img
-                        src="./assets/images/Cau-trang-tien-1.jpg"
+                        src="./assets/images/LangNghe/duc.png"
                         alt=""
-                        class="absolute top-0 left-0 w-full h-[51%] blur-sm"
+                        class="absolute top-0 left-0 w-full h-[51%]"
                       />
 
                       <div
@@ -201,9 +201,9 @@
                   >
                     <div class="itemHighlight relative overflow-hidden">
                       <img
-                        src="./assets/images/Cau-trang-tien-1.jpg"
+                        src="./assets/images/LangNghe/gom_bg.png"
                         alt=""
-                        class="absolute top-0 left-0 w-full h-[51%] blur-sm"
+                        class="absolute top-0 left-0 w-full h-[51%]"
                       />
 
                       <div
@@ -248,9 +248,9 @@
                   >
                     <div class="itemHighlight relative overflow-hidden">
                       <img
-                        src="./assets/images/Cau-trang-tien-1.jpg"
+                        src="./assets/images/LangNghe/huong_bg.png"
                         alt=""
-                        class="absolute top-0 left-0 w-full h-[51%] blur-sm"
+                        class="absolute top-0 left-0 w-full h-[51%]"
                       />
 
                       <div
@@ -295,9 +295,9 @@
                   >
                     <div class="itemHighlight relative overflow-hidden">
                       <img
-                        src="./assets/images/Cau-trang-tien-1.jpg"
+                        src="./assets/images/LangNghe/nonla_bg.png"
                         alt=""
-                        class="absolute top-0 left-0 w-full h-[51%] blur-sm"
+                        class="absolute top-0 left-0 w-full h-[51%]"
                       />
 
                       <div
@@ -342,9 +342,9 @@
                   >
                     <div class="itemHighlight relative overflow-hidden">
                       <img
-                        src="./assets/images/Cau-trang-tien-1.jpg"
+                        src="./assets/images/LangNghe/danlat_bg.png"
                         alt=""
-                        class="absolute top-0 left-0 w-full h-[51%] blur-sm"
+                        class="absolute top-0 left-0 w-full h-[51%]"
                       />
 
                       <div
@@ -365,7 +365,7 @@
                           />
                         </div>
                         <h3
-                          class="text-[18px] text-[#fff] font-medium uppercase text-center w-full line-clamp-3 _xs:text-[18px] _xxs:text-[18px]"
+                          class="text-[18px] text-[#EDEDED] font-medium uppercase text-center w-full line-clamp-3 _xs:text-[18px] _xxs:text-[18px]"
                         >
                           <strong>Làng nghề đan lát</strong> với những sản phẩm
                           thủ công mộc mạc, tinh xảo, phản ánh sự khéo léo và
@@ -389,9 +389,9 @@
                   >
                     <div class="itemHighlight relative overflow-hidden">
                       <img
-                        src="./assets/images/Cau-trang-tien-1.jpg"
+                        src="./assets/images/LangNghe/hoagiay_bg.png"
                         alt=""
-                        class="absolute top-0 left-0 w-full h-[51%] blur-sm"
+                        class="absolute top-0 left-0 w-full h-[51%]"
                       />
 
                       <div
@@ -1180,19 +1180,31 @@
 
         if (typeof swiper !== "undefined" && header) {
           const totalSlides = swiper.slides.length;
-          const ctaSlideIndex = totalSlides - 1; // Chỉ số của slide "Liên hệ" là 5
+          const ctaSlideIndex = totalSlides - 1; // Slide cuối cùng (Liên hệ)
 
-          // --- HÀM CẬP NHẬT TRẠNG THÁI ACTIVE CHO MENU (PHIÊN BẢN MỚI) ---
+          // --- HÀM ẨN HEADER Ở SLIDE CUỐI ---
+          const updateHeaderVisibility = () => {
+            if (swiper.realIndex === ctaSlideIndex) {
+              // Nếu là slide cuối, ẩn header đi
+              header.classList.add("header-hidden");
+            } else {
+              // Nếu là các slide khác, hiện header ra
+              header.classList.remove("header-hidden");
+            }
+          };
+
+          // --- HÀM CẬP NHẬT GẠCH CHÂN CHO MENU ---
           const updateActiveMenu = () => {
             const currentSlideIndex = swiper.realIndex;
 
-            // 1. Xóa class gạch chân khỏi tất cả các mục menu
-            // Logic này sẽ không ảnh hưởng đến class 'active_menu' của nút Liên hệ
-            menuLinks.forEach((link) => {
-              link.classList.remove("menu-link-active-underline");
-            });
+            // Xóa tất cả gạch chân khỏi các link menu (trừ nút Liên hệ)
+            document
+              .querySelectorAll(".menu-link:not(.active_menu)")
+              .forEach((link) => {
+                link.classList.remove("menu-link-active-underline");
+              });
 
-            // 2. Chỉ thêm class gạch chân nếu slide hiện tại KHÔNG PHẢI là slide cuối
+            // Chỉ thêm gạch chân nếu không phải là slide cuối
             if (currentSlideIndex !== ctaSlideIndex) {
               const activeLink = document.querySelector(
                 `.menu-link[data-slide="${currentSlideIndex}"]`
@@ -1201,34 +1213,24 @@
                 activeLink.classList.add("menu-link-active-underline");
               }
             }
-            // Nếu là slide cuối thì không làm gì cả, giữ nguyên style cho nút Liên hệ
           };
 
-          // --- HÀM ẨN/HIỆN HEADER (giữ nguyên) ---
-          const updateHeaderVisibility = () => {
-            if (swiper.realIndex === ctaSlideIndex) {
-              header.classList.add("header-hidden");
-            } else {
-              header.classList.remove("header-hidden");
-            }
-          };
-
-          // Lắng nghe sự kiện và gọi các hàm cập nhật
+          // Lắng nghe sự kiện mỗi khi chuyển slide
           swiper.on("slideChange", () => {
             updateHeaderVisibility();
             updateActiveMenu();
           });
 
-          // Chạy lần đầu khi tải trang
+          // Chạy 2 hàm này ngay khi tải trang
           updateHeaderVisibility();
           updateActiveMenu();
         }
 
-        // --- Xử lý click cho nút "Chi tiết chương trình" (giữ nguyên) ---
+        // --- Xử lý cho nút "Chi tiết chương trình" để quay về slide đầu ---
         if (detailsButton && typeof swiper !== "undefined") {
           detailsButton.addEventListener("click", function (event) {
             event.preventDefault();
-            swiper.slideToLoop(0, 800);
+            swiper.slideToLoop(0, 800); // Quay về slide đầu tiên
           });
         }
       });

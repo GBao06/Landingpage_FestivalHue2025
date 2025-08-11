@@ -11,17 +11,43 @@
   min-height: 100vh;
   padding-top: 55px;
   font-family: "Salsa", sans-serif;
-  background-image: url("/assets/images/lichtrinh/Ngo-Mon2.jpg");
-  background-size: cover;
-  background-position: center;
+  /* background: radial-gradient(
+      900px 420px at 20% 15%,
+      rgba(255, 214, 102, 0.1),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 520px at 80% 85%,
+      rgba(167, 139, 250, 0.12),
+      transparent 60%
+    ),
+    #0e0e12; */
+  background: linear-gradient(
+      0deg,
+      rgba(10, 8, 14, 0.65),
+      rgba(10, 8, 14, 0.65)
+    ),
+    url("../assets/images/lichtrinh/Ngo-Mon2.jpg") center/cover no-repeat;
   position: relative;
 }
-
+/* .schedule-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 120px;
+  background: linear-gradient(
+    180deg,
+    rgba(14, 12, 18, 0.92),
+    rgba(14, 12, 18, 0)
+  );
+  pointer-events: none;
+} */
 .schedule-container::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
 }
 
@@ -204,6 +230,7 @@ ul {
 }
 
 /* RES 912px */
+
 @media (max-width: 57em) {
   /* 1. Thiết lập layout 2 cột cho toàn bộ container */
   .schedule-container {
