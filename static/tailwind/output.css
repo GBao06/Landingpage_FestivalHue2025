@@ -4973,13 +4973,13 @@ input:checked + .toggle-bg {
   box-shadow: none !important;
 }
 
-.bg1{
+.bg1 {
   background-size: 100% auto;
   background-position: 50% 100%;
   background-repeat: no-repeat;
 }
-@media screen and (max-width: 767px){
-  .bg1{
+@media screen and (max-width: 767px) {
+  .bg1 {
     background-size: cover;
     background-position: right bottom;
   }
@@ -5030,7 +5030,7 @@ input:checked + .toggle-bg {
 /* import font */
 
 /* @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap'); */
-
+/*  
 @font-face {
   font-family: "Geologica";
 
@@ -5216,6 +5216,7 @@ input:checked + .toggle-bg {
       format("svg");
 }
 
+*/
 * {
   /* -ms-overflow-style: none;
   scrollbar-width: none;
@@ -8555,10 +8556,17 @@ strong {
   }
 }
 /* thêm bg */
-#bg1-home-page{
+#bg1-home-page {
   position: relative;
-  background:
-    radial-gradient(800px 420px at 70% 60%, rgba(255,153,51,.18), transparent 60%),
-    radial-gradient(700px 360px at 20% 20%, rgba(255,214,102,.12), transparent 60%),
+  background: radial-gradient(
+      800px 420px at 70% 60%,
+      rgba(255, 153, 51, 0.18),
+      transparent 60%
+    ),
+    radial-gradient(
+      700px 360px at 20% 20%,
+      rgba(255, 214, 102, 0.12),
+      transparent 60%
+    ),
     #0e0e12;
 }
