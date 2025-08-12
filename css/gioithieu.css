@@ -25,7 +25,7 @@ body {
 
 /* content */
 
-.content-gt {
+.details[data-content="one"] {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -34,15 +34,14 @@ body {
   left: 3%;
   width: 40%;
   height: max-content;
-  /* color: #fff; */
   text-align: center;
   padding: 20px;
-  opacity: 0;
-  z-index: 2; /* Đảm bảo chữ nằm trên lớp phủ */
+  opacity: 0; /* Giữ nguyên opacity 0 */
+  z-index: 2;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
-.content-gt h1 {
+.details h1 {
   font-family: "Merriweather", cursive;
   font-size: clamp(3.2rem, 3vw, 10.4rem);
   margin-bottom: 20px;
@@ -52,7 +51,7 @@ body {
   font-weight: 800;
 }
 
-.content-gt p {
+.details p {
   font-family: inherit;
   font-size: 2rem;
   line-height: 1.4;
@@ -62,15 +61,15 @@ body {
   color: #f2f2f2; /* Thay đổi màu chữ sang trắng sáng hơn */
 }
 
-.swiper-slide-active .content-gt {
+.swiper-slide-active .details {
   opacity: 1;
 }
 
-.swiper-slide-active .content-gt h1 {
+.swiper-slide-active .details h1 {
   animation: moveDown 0.8s ease-in forwards;
 }
 
-.swiper-slide-active .content-gt p {
+.swiper-slide-active .details p {
   animation: moveDown 1s ease-in forwards;
   animation-delay: 1s;
 }
@@ -142,12 +141,12 @@ body {
 /* media queries */
 /* RES 1200px */
 @media (max-width: 75em) {
-  .content-gt {
+  .details {
     top: 18%;
   }
 
-  .content-gt[data-content="two"],
-  .content-gt[data-content="three"] {
+  .details[data-content="two"],
+  .details[data-content="three"] {
     top: 5%;
     width: 50%;
   }
@@ -182,9 +181,9 @@ body {
 /* RES 928px */
 
 @media (max-width: 960px) {
-  .content-gt,
-  .content-gt[data-content="two"],
-  .content-gt[data-content="three"] {
+  .details[data-content="one"],
+  .details[data-content="two"],
+  .details[data-content="three"] {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -192,11 +191,11 @@ body {
     width: 80%; /* hoặc 60% tuỳ ý */
   }
 
-  .content-gt h1 {
+  .details h1 {
     margin-bottom: 14px;
   }
 
-  .content-gt p {
+  .details p {
     font-size: 1.6rem;
     line-height: 1.4;
     text-align: center;
@@ -278,9 +277,9 @@ body {
 }
 
 @media (max-width: 42em) {
-  .content-gt,
-  .content-gt[data-content="two"],
-  .content-gt[data-content="three"] {
+  .details,
+  .details[data-content="two"],
+  .details[data-content="three"] {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -288,7 +287,7 @@ body {
     width: 90%; /* hoặc 80% tuỳ ý */
   }
 
-  .content-gt p {
+  .details p {
     font-size: 1.5rem;
     line-height: 1.2;
     text-align: center;
