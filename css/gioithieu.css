@@ -99,12 +99,21 @@ body {
   inset: 0;
   width: 100%;
   height: 100%;
-  clip-path: circle(5%);
-  filter: brightness(90%) contrast(90%); /* Tăng contrast để ảnh sắc nét hơn */
+  filter: brightness(90%) contrast(90%);
   overflow: hidden;
-  opacity: 0;
   z-index: 1;
-  /* Đảm bảo pseudo-element định vị tương đối với nó */
+
+  /* 1. Mặc định ẩn hoàn toàn */
+  visibility: hidden;
+  opacity: 0;
+  clip-path: circle(5%);
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+/* 2. Chỉ hiển thị và chạy animation khi slide được active */
+.swiper-slide-active .background {
+  visibility: visible;
+  opacity: 1;
+  animation: resizeClipPath 3s ease-in-out forwards;
 }
 
 .animation {
